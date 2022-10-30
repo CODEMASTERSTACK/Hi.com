@@ -1,5 +1,41 @@
 <html>
 <head>
+ <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: black;
+        }
+          
+        .glow {
+            font-size: 60px;
+            color: Green;
+            text-align: center;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+          
+        /* Text glowing from onw shade to other shade */
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgb(43, 255, 0),
+                             0 0 20px rgb(43, 255, 0), 
+                             0 0 30px #26e600, 
+                             0 0 40px #26e600,
+                             0 0 50px #26e600,
+                             0 0 60px #26e600, 
+                             0 0 70px #26e600;
+            }
+            to {
+                text-shadow: 0 0 20px #4dff7a;
+                             0 0 30px #4dff7a, 
+                             0 0 40px #4dff7a,
+                             0 0 50px #4dff7a, 
+                             0 0 60px #4dff7a,
+                             0 0 70px #4dff7a, 
+                             0 0 80px #4dff7a;
+            }
+        }
+    </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -114,6 +150,9 @@ body {
   background-size: cover;
 }
 
+<center>
+  <h1 class="glow">Under Development</h1>
+</center>
 
 </body>
 </html>
