@@ -138,6 +138,7 @@ body {
       <a href="#package">upcoming</a>
       <a href="#express">upcoming</a>
     </div>
+  </div> 
   <div class="subnav">
     <button class="subnavbtn">One Direction <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
@@ -146,6 +147,7 @@ body {
       <a href="#link3">upcoming</a>
       <a href="#link4">upcoming</a>
     </div>
+  </div>
   <a href="https://www.instagram.com/xiuying_leo/">Know Me 👴 </a>
  
 <style>
@@ -158,8 +160,17 @@ body {
 </style>
 
   </div>
+
 <center>
   <h1 class="glow">Under Development</h1>
 </center>
+<bottom>  <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+        
+    </ul>
+</bottom>
 </body>
-
