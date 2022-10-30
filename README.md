@@ -1,5 +1,12 @@
+
 <html>
 <head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -54,7 +61,7 @@ body {
 .subnav-content a {
   float: left;
   color: white;
-  text-decoration: none;
+  text-decoration: blink;
 }
 
 .subnav-content a:hover {
@@ -67,7 +74,8 @@ body {
 }
 </style>
 <title> </title>
-<meta name="viewport" 
+<head>
+    <meta name="viewport" 
           content="width=device-width, initial-scale=1">
     <style>
         body {
@@ -76,7 +84,7 @@ body {
           
         .glow {
             font-size: 60px;
-            color: dodgerblue;
+            color: Green;
             text-align: center;
             animation: glow 2s ease-in-out infinite alternate;
         }
@@ -103,7 +111,7 @@ body {
             }
         }
     </style>
-     <style>
+ <style>
    body {
         background: rgb(70, 69, 69);
       }
@@ -162,9 +170,8 @@ body {
   </style>
 </head>
 <body>
-<body>
 <div class="navbar">
-  <a href="https://codemasterstack.github.io/Trying.com/">Home</a>
+  <a href="#home">Home</a>
   <div class="subnav">
     <button class="subnavbtn">BTS<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
@@ -174,31 +181,31 @@ body {
       <a href="https://youtu.be/3SGKAFTTn9Y">Las Vegas</a>
       <a href="https://youtu.be/2gUPeGgkvcg">Paris France</a>
       <a href="https://youtu.be/yqV0QCyj0Co">Saudi Arabia</a>
+      <a href="https://www.google.com/logos/fnbx/bts/kp_icon_lm.gif"> BTS Game </a>
       <a href="https://en.wikipedia.org/wiki/List_of_BTS_live_performances"> More About BTS </a>
+
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Coldplay <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
       <a href="#bring">Bring</a>
-      <a href="#deliver">1</a>
-      <a href="#package">2</a>
-      <a href="#express">3</a>
+      <a href="#deliver">Deliver</a>
+      <a href="#package">Package</a>
+      <a href="#express">Express</a>
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">One Direction <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#link1">1</a>
-      <a href="#link2">2</a>
-      <a href="#link3">3</a>
-      <a href="#link4">4</a>
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
     </div>
   </div>
-  <a href="https://www.instagram.com/xiuying_leo/">Know Me</a>
-</div>
-<div style="padding:0 16px">
-</div>
+  <a href="https://www.instagram.com/xiuying_leo/">Know Me 👴 </a>
+ 
 <style>
 body {
   background-image: url('https://wallpaperaccess.com/full/6986470.jpg');
@@ -206,11 +213,14 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-<center> 
-<h1> Under Development </h1>
+</style>
+
+  </div>
+</div>
+<center>
+  <h1 class="glow">Under Development</h1>
 </center>
-<center> 
- <ul>
+<bottom>  <ul>
       <li></li>
       <li></li>
       <li></li>
@@ -218,6 +228,6 @@ body {
       <li></li>
         
     </ul>
-    </center>
+</bottom>
 </body>
 </html>
