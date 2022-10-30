@@ -164,14 +164,5 @@ body {
 <center>
   <h1 class="glow">Under Development</h1>
 </center>
-<bottom>  <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-        
-    </ul>
-</bottom>
 </body>
-</html>
+
