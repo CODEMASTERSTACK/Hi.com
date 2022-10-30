@@ -102,7 +102,7 @@ body {
       <a href="#link4">4</a>
     </div>
   </div>
-  <a href="#contact">Contact</a>
+  <a href="https://www.instagram.com/xiuying_leo/">Know Me</a>
 </div>
 <div style="padding:0 16px">
 </div>
