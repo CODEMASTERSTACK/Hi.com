@@ -1,4 +1,3 @@
-# Trying.com
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,14 +39,14 @@ body {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
+  background-color: dodgerblue;
 }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: red;
+  background-color: dodgerblue;
   width: 100%;
   z-index: 1;
 }
