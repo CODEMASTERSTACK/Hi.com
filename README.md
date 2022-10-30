@@ -1,41 +1,11 @@
 <html>
 <head>
- <meta name="viewport" 
-          content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-color: black;
-        }
-          
-        .glow {
-            font-size: 60px;
-            color: Green;
-            text-align: center;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-          
-        /* Text glowing from onw shade to other shade */
-        @-webkit-keyframes glow {
-            from {
-                text-shadow: 0 0 10px rgb(43, 255, 0),
-                             0 0 20px rgb(43, 255, 0), 
-                             0 0 30px #26e600, 
-                             0 0 40px #26e600,
-                             0 0 50px #26e600,
-                             0 0 60px #26e600, 
-                             0 0 70px #26e600;
-            }
-            to {
-                text-shadow: 0 0 20px #4dff7a;
-                             0 0 30px #4dff7a, 
-                             0 0 40px #4dff7a,
-                             0 0 50px #4dff7a, 
-                             0 0 60px #4dff7a,
-                             0 0 70px #4dff7a, 
-                             0 0 80px #4dff7a;
-            }
-        }
-    </style>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
+}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -90,7 +60,7 @@ body {
 .subnav-content a {
   float: left;
   color: white;
-  text-decoration: none;
+  text-decoration: blink;
 }
 
 .subnav-content a:hover {
@@ -102,6 +72,101 @@ body {
   display: block;
 }
 </style>
+<title> </title>
+<head>
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: black;
+        }
+          
+        .glow {
+            font-size: 60px;
+            color: Green;
+            text-align: center;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+          
+        /* Text glowing from onw shade to other shade */
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgb(43, 255, 0),
+                             0 0 20px rgb(43, 255, 0), 
+                             0 0 30px #26e600, 
+                             0 0 40px #26e600,
+                             0 0 50px #26e600,
+                             0 0 60px #26e600, 
+                             0 0 70px #26e600;
+            }
+            to {
+                text-shadow: 0 0 20px #4dff7a;
+                             0 0 30px #4dff7a, 
+                             0 0 40px #4dff7a,
+                             0 0 50px #4dff7a, 
+                             0 0 60px #4dff7a,
+                             0 0 70px #4dff7a, 
+                             0 0 80px #4dff7a;
+            }
+        }
+    </style>
+ <style>
+   body {
+        background: rgb(70, 69, 69);
+      }
+      ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 50%;
+  
+        animation: animate 1.7s ease-in-out infinite;
+      }
+      @keyframes animate {
+        0%,
+        40%,
+        100% {
+          transform: scale(0.2);
+        }
+        20% {
+          transform: scale(1);
+        }
+      }
+  
+      ul li:nth-child(1) {
+        animation-delay: -1.2s;
+        background: yellow;
+        box-shadow: 0 0 50px yellow;
+      }
+      ul li:nth-child(2) {
+        animation-delay: -1s;
+        background: rgb(99, 247, 136);
+        box-shadow: 0 0 50px rgb(99, 247, 136);
+      }
+      ul li:nth-child(3) {
+        animation-delay: -0.8s;
+        background: rgb(30, 243, 225);
+        box-shadow: 0 0 50px  rgb(30, 243, 225);
+      }
+      ul li:nth-child(4) {
+        animation-delay: -0.6s;
+        background: rgb(241, 58, 58);
+        box-shadow: 0 0 50px rgb(241, 58, 58);
+      }
+      ul li:nth-child(5) {
+        animation-delay: -0.4s;
+        background: rgb(247, 61, 176);
+        box-shadow: 0 0 50px  rgb(247, 61, 176);
+      }
+    
+  </style>
 <title> </title>
 </head>
 <body>
