@@ -158,7 +158,6 @@ body {
 </style>
 
   </div>
-</div>
 <center>
   <h1 class="glow">Under Development</h1>
 </center>
