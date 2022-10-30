@@ -103,7 +103,6 @@ body {
     </div>
   </div>
   <a href="https://www.instagram.com/xiuying_leo/">Know Me</a>
-  <a href="firework.mp4"> Fireworks </a>
 </div>
 <div style="padding:0 16px">
 </div>
@@ -114,7 +113,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-</style>
-<h1 style="background-color:DodgerBlue;">It's me Krish ♫ </h1>
+<video width="320" height="240" controls>
+  <source src="fireworks.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 </body>
 </html>
