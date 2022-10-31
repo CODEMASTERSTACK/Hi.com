@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 5800px;
+  height: 530px;
   color: white;
   border-radius: 5px;
 }
@@ -99,9 +99,8 @@ body {
 <div class="topnav">
   <a href="#krish" class="active">Krish </a>
   <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
+    <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
