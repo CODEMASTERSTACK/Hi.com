@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,7 +114,7 @@ body {
  <h4> Updates </h4>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
 <h5> Mail </h5>
-</p> I Don't See Mails 🤣 </p>
+<p> I Don't See Mails 🤣 </p>
 
 
 </div>
