@@ -81,7 +81,7 @@ body {
   <div class="subnav">
     <button class="subnavbtn">BTS<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="practice"> Pravtice </a>
+      <a href="https://docs.google.com/drawings/d/186UUKYgGmx_2IUvfS7xAEpevNWjLRICBTLTSlBGPY7Q/edit?usp=sharing"> Pravtice </a>
       <a href="https://youtu.be/f6_c-tRluLU">Busan</a>
       <a href="https://youtu.be/tFpIwQFNke0">Grammys</a>
       <a href="https://youtu.be/55EgCkqKL9w">London</a>
