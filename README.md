@@ -81,7 +81,7 @@ body {
   <div class="subnav">
     <button class="subnavbtn">BTS<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="https://mirrorace.org/m/3ELqd"> Pravtice </a>
+      <a href="https://user-images.githubusercontent.com/91791566/198954709-75e8d8bb-e255-4a23-a558-a63c625a4f88.mp4"> Pravtice </a>
       <a href="https://youtu.be/f6_c-tRluLU">Busan</a>
       <a href="https://youtu.be/tFpIwQFNke0">Grammys</a>
       <a href="https://youtu.be/55EgCkqKL9w">London</a>
@@ -165,3 +165,7 @@ body {
 </center>
 </body>
 </html>
+
+
+
+
