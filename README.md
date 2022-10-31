@@ -1,119 +1,127 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-h1 {
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue;
-}
-</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333; 
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 350px;
   color: white;
-  text-align: center;
+  border-radius: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: dodgerblue;
-}
-
-.subnav-content {
-  display: none;
+.topnav a.icon {
+  background: black;
+  display: block;
   position: absolute;
-  left: 0;
-  background-color: dodgerblue;
-  width: 100%;
-  z-index: 1;
+  right: 0;
+  top: 0;
 }
 
-.subnav-content a {
-  float: left;
-  color: white;
-  text-decoration: blink;
-}
-
-.subnav-content a:hover {
-  background-color: #eee;
+.topnav a:hover {
+  background-color: #ddd;
   color: black;
 }
 
-.subnav:hover .subnav-content {
-  display: block;
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
 </style>
-<title> </title>
 </head>
 <body>
-<div class="navbar">
-  <a href="#home">Home</a>
-  <div class="subnav">
-    <button class="subnavbtn">BTS<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="https://user-images.githubusercontent.com/91791566/198954709-75e8d8bb-e255-4a23-a558-a63c625a4f88.mp4"> Pravtice </a>
-      <a href="https://youtu.be/f6_c-tRluLU">Busan</a>
-      <a href="https://youtu.be/tFpIwQFNke0">Grammys</a>
-      <a href="https://youtu.be/55EgCkqKL9w">London</a>
-      <a href="https://youtu.be/3SGKAFTTn9Y">Las Vegas</a>
-      <a href="https://youtu.be/2gUPeGgkvcg">Paris France</a>
-      <a href="https://youtu.be/yqV0QCyj0Co">Saudi Arabia</a>
-      <a href="https://www.google.com/logos/fnbx/bts/kp_icon_lm.gif"> BTS Game </a>
-      <a href="https://en.wikipedia.org/wiki/List_of_BTS_live_performances"> More About BTS </a>
+<div id="mySidenav" class="sidenav">
+  <a href="https://www.instagram.com/xiuying_leo/" id="about">About</a>
+</div>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
 
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Coldplay <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="https://youtu.be/9s50my_1oQM">Barcelona</a>
-      <a href="https://youtu.be/Q0opBJi-Yas">Paris</a>
-      <a href="https://youtu.be/fDlsRrTTOgM">London</a>
-      <a href="https://youtu.be/-65g14QFQ9g">Argentina</a>
-      <a href=""> Upcoming </a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">One Direction <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="https://youtu.be/ZoEbdL0RUv8">Italy,Milan</a>
-      <a href="https://youtu.be/cQ_Z5T1QV60">New Year Eve </a>
-      <a href="https://youtu.be/l4MgoZBox7g">Argentina</a>
-      <a href="#link4">upcoming</a>
-    </div>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#krish" class="active">Krish </a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
   </div>
-  <a href="https://www.instagram.com/xiuying_leo/">Know Me 👴 </a>
- 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>About This Website</h3>
+  <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
+ <h4> Updates </h4>
+<p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
+<h5> Mail </h5>
+</p> I Don't See Mails 🤣 </p>
+
+
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
 <style>
 body {
   background-image: url('https://wallpaperaccess.com/full/6986470.jpg');
@@ -122,50 +130,17 @@ body {
   background-size: cover;
 }
 </style>
-  </div>
-</div>
- <meta name="viewport" 
-          content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-color: black;
-        }
-          
-        .glow {
-            font-size: 60px;
-            color: Green;
-            text-align: center;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-          
-        /* Text glowing from onw shade to other shade */
-        @-webkit-keyframes glow {
-            from {
-                text-shadow: 0 0 10px rgb(43, 255, 0),
-                             0 0 20px rgb(43, 255, 0), 
-                             0 0 30px #26e600, 
-                             0 0 40px #26e600,
-                             0 0 50px #26e600,
-                             0 0 60px #26e600, 
-                             0 0 70px #26e600;
-            }
-            to {
-                text-shadow: 0 0 20px #4dff7a;
-                             0 0 30px #4dff7a, 
-                             0 0 40px #4dff7a,
-                             0 0 50px #4dff7a, 
-                             0 0 60px #4dff7a,
-                             0 0 70px #4dff7a, 
-                             0 0 80px #4dff7a;
-            }
-        }
-    </style>
-<center>
-  <h1 class="glow">Under Development</h1>
-</center>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 </body>
 </html>
-
-
-
-
