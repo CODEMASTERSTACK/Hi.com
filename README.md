@@ -81,6 +81,7 @@ body {
   <div class="subnav">
     <button class="subnavbtn">BTS<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
+      <a href="practice"> Pravtice </a>
       <a href="https://youtu.be/f6_c-tRluLU">Busan</a>
       <a href="https://youtu.be/tFpIwQFNke0">Grammys</a>
       <a href="https://youtu.be/55EgCkqKL9w">London</a>
@@ -95,18 +96,19 @@ body {
   <div class="subnav">
     <button class="subnavbtn">Coldplay <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#bring">upcoming</a>
-      <a href="#deliver">upcoming</a>
-      <a href="#package">upcoming</a>
-      <a href="#express">upcoming</a>
+      <a href="https://youtu.be/9s50my_1oQM">Barcelona</a>
+      <a href="https://youtu.be/Q0opBJi-Yas">Paris</a>
+      <a href="https://youtu.be/fDlsRrTTOgM">London</a>
+      <a href="https://youtu.be/-65g14QFQ9g">Argentina</a>
+      <a href=""> Upcoming </a>
     </div>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">One Direction <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#link1">upcoming</a>
-      <a href="#link2">upcoming</a>
-      <a href="#link3">upcoming</a>
+      <a href="https://youtu.be/ZoEbdL0RUv8">Italy,Milan</a>
+      <a href="https://youtu.be/cQ_Z5T1QV60">New Year Eve </a>
+      <a href="https://youtu.be/l4MgoZBox7g">Argentina</a>
       <a href="#link4">upcoming</a>
     </div>
   </div>
