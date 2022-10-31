@@ -109,6 +109,7 @@ body {
 </div>
 
 <div style="padding-left:16px">
+<h2> <marquee> Happy Halloween 🎃 </marquee> </h2>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <h4> Updates </h4>
