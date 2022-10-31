@@ -123,7 +123,7 @@ body {
 </div>
 <style>
 body {
-  background-image: url('https://wallpaperaccess.com/full/6986470.jpg');
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/519/895/746/halloween-4k-windows-for-desktop-wallpaper-preview.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
