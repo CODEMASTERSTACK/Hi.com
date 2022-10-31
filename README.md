@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 530px;
+  height: 580px;
   color: white;
   border-radius: 5px;
 }
@@ -108,14 +108,13 @@ body {
 </div>
 
 <div style="padding-left:16px">
-<h2> <marquee> Happy Halloween 🎃 </marquee> </h2>
+<p>
+<center>
+<iframe src="https://giphy.com/embed/NtHWTRvLU4byUUzG2s" width="400" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <h4> Updates </h4>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
-<h5> Mail </h5>
-<p> I Don't See Mails 🤣 </p>
-
 
 </div>
 
