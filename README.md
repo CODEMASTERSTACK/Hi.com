@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 400px;
+  height: 500px;
   color: white;
   border-radius: 5px;
 }
