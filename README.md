@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 #mySidenav a {
-  position: absolute;
-  left: -80px;
+  position: fixed;
+  left: -90px;
   transition: 0.3s;
   padding: 15px;
   width: 100px;
@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 600px;
+  height: 630px;
   color: white;
   border-radius: 5px;
 }
@@ -99,9 +99,9 @@ body {
 <div class="topnav">
   <a href="#krish" class="active">Krish </a>
   <div id="myLinks">
-    <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
+     <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
-    <a href="https://github.com/CODEMASTERSTACK/Hi.com/files/9907066/New.Text.Document.txt"> File </a>
+    <a href="New Text Document.txt"> Source Code </a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -116,6 +116,7 @@ body {
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <h4> Updates </h4>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
+
 
 </div>
 
@@ -139,8 +140,7 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+</script>
 
 </body>
 </html>
-
-
