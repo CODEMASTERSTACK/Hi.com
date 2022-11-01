@@ -87,18 +87,6 @@ body {
   color: white;
 }
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Button</title>
-    <style>
-        .container{
-            height: 200px;
-            width: 500px;
-            border: 2px solid black;
-            margin-top: 30px;
-        }
-    </style>
 </head>
 <body>
 <div id="mySidenav" class="sidenav">
@@ -151,13 +139,6 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-</script>
-<div class="container">
-        <h1 style="text-align:center;">Html Link Button With action attribute</h1>
-        <form action="New Text Document.txt">
-            <button class="btn btn-danger btn-lg">Click</button>
-        </form>
-    </div>
 
 </body>
 </html>
