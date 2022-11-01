@@ -87,6 +87,18 @@ body {
   color: white;
 }
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 500px;
+            border: 2px solid black;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
 <div id="mySidenav" class="sidenav">
@@ -140,6 +152,12 @@ function myFunction() {
   }
 }
 </script>
+<div class="container">
+        <h1 style="text-align:center;">Html Link Button With action attribute</h1>
+        <form action="https://github.com/CODEMASTERSTACK/Hi.com/blob/78b3fe7df678a274a2e84cd28185a43fc4fb61f1/New%20Text%20Document.txt">
+            <button class="btn btn-danger btn-lg">Click</button>
+        </form>
+    </div>
 
 </body>
 </html>
