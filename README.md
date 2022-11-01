@@ -154,7 +154,7 @@ function myFunction() {
 </script>
 <div class="container">
         <h1 style="text-align:center;">Html Link Button With action attribute</h1>
-        <form action="https://github.com/CODEMASTERSTACK/Hi.com/blob/78b3fe7df678a274a2e84cd28185a43fc4fb61f1/New%20Text%20Document.txt">
+        <form action="New Text Document.txt">
             <button class="btn btn-danger btn-lg">Click</button>
         </form>
     </div>
