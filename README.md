@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 580px;
+  height: 600px;
   color: white;
   border-radius: 5px;
 }
@@ -101,6 +101,7 @@ body {
   <div id="myLinks">
     <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
+    <a href="https://github.com/CODEMASTERSTACK/Hi.com/files/9907066/New.Text.Document.txt"> File </a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -110,7 +111,7 @@ body {
 <div style="padding-left:16px">
 <p>
 <center>
-<iframe src="https://giphy.com/embed/NtHWTRvLU4byUUzG2s" width="400" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
+<iframe src="https://giphy.com/embed/NtHWTRvLU4byUUzG2s" width="310" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <h4> Updates </h4>
@@ -142,3 +143,5 @@ function myFunction() {
 
 </body>
 </html>
+
+
