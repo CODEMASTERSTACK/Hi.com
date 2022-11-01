@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 630px;
+  height: 800px;
   color: white;
   border-radius: 5px;
 }
@@ -114,6 +114,8 @@ body {
 <iframe src="https://giphy.com/embed/NtHWTRvLU4byUUzG2s" width="310" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop controls autoplay></lottie-player>
  <h4> Updates </h4>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
 
