@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 8700px;
+  height: 870px;
   color: white;
   border-radius: 5px;
 }
@@ -102,6 +102,8 @@ body {
      <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
     <a href="New Text Document.txt"> Source Code </a>
+    <center> <a href="<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_aiWayRBilz.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover loop  autoplay></lottie-player></center>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
