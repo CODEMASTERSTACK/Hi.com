@@ -113,7 +113,7 @@ body {
 <div style="padding-left:16px">
 <p>
 <center>
-<iframe src="https://giphy.com/embed/NtHWTRvLU4byUUzG2s" width="310" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
+<iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
