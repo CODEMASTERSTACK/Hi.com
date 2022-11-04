@@ -115,7 +115,7 @@ body {
 <center>
 <h1> Updating In </h1>
 <h1 style="font-size: 2.5rem; color: #2ecc71">
-<p id="demo"></p>
+<p id="demo">
 <script>
  var countDownDate = new Date("Nov 13, 2022 16:00:00").getTime();
 var x = setInterval(function() {
@@ -133,7 +133,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-</center>
 </h1>
 <center>
 <iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
