@@ -151,7 +151,7 @@ function myFunction() {
   location.replace("New Text Document.html")
 }
 </script>
-
+</script>
 
 </body>
 </html>
