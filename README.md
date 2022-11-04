@@ -149,7 +149,7 @@ function myFunction() {
 
 <script>
 function myFunction() {
-  location.replace("https://github.com/CODEMASTERSTACK/Hi.com/files/9939711/New.Text.Document.txt")
+  location.replace("RO5.HTML")
 }
 </script>
 
