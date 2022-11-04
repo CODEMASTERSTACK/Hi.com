@@ -149,7 +149,7 @@ function myFunction() {
 
 <script>
 function myFunction() {
-  location.replace("RO5.HTML")
+  location.replace("New Text Document.html")
 }
 </script>
 
