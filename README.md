@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 1100px;
+  height: 1150px;
   color: white;
   border-radius: 5px;
 }
@@ -101,7 +101,7 @@ body {
   <div id="myLinks">
      <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
-    <a href="New Text Document.txt"> Source Code </a>
+    <a href="New Text Document.txt">Sample Source Code </a>
     <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_0dkyba8h.json"  background="transparent"  speed="1"  style="width: 160px; height: 160px;" hover loop  autoplay></lottie-player></center>
   </div>
@@ -136,19 +136,17 @@ var x = setInterval(function() {
 </h1>
 </center>
 <center>
-<iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
+<iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p></center>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player></center></p>
- <h4> Updates </h4>
+ <h3> Updates </h3>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
 
 
-</div>
 
 <!-- End smartphone / tablet look -->
-</div>
 <style>
 body {
   background-image: url('https://c4.wallpaperflare.com/wallpaper/519/895/746/halloween-4k-windows-for-desktop-wallpaper-preview.jpg');
