@@ -144,7 +144,6 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-</script>
 <button onclick="myFunction()">Replace document</button>
 
 <script>
