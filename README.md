@@ -134,6 +134,7 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 </h1>
+</center>
 <center>
 <iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
   <h3>About This Website</h3>
@@ -167,6 +168,4 @@ function myFunction() {
   }
 }
 </script>
-</body>
-</html>
 
