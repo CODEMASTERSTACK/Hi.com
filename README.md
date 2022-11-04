@@ -243,7 +243,7 @@ body {
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#krish" class="active">Krish </a>
+  <a href="New Text Document.html" class="active">Krish </a>
   <div id="myLinks">
      <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
@@ -290,14 +290,6 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-
-<button onclick="myFunction()">Replace document</button>
-
-<script>
-function myFunction() {
-  location.replace("New Text Document.html")
-}
-</script>
 </script>
 </body>
 </html>
