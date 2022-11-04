@@ -290,7 +290,7 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-</script>
+
 <button onclick="myFunction()">Replace document</button>
 
 <script>
@@ -298,9 +298,7 @@ function myFunction() {
   location.replace("New Text Document.html")
 }
 </script>
-
 </script>
-
 </body>
 </html>
 
