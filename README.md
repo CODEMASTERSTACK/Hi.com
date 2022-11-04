@@ -145,6 +145,15 @@ function myFunction() {
   }
 }
 </script>
+<button onclick="myFunction()">Replace document</button>
+
+<script>
+function myFunction() {
+  location.replace("https://github.com/CODEMASTERSTACK/Hi.com/files/9939711/New.Text.Document.txt")
+}
+</script>
+
 
 </body>
 </html>
+
