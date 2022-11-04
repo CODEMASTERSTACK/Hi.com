@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 1150px;
+  height: 1200px;
   color: white;
   border-radius: 5px;
 }
@@ -136,7 +136,7 @@ var x = setInterval(function() {
 </h1>
 </center>
 <center>
-<iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p></center>
+<iframe src="https://giphy.com/embed/Uq54MX40Rpi7kH5pt2" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center></p>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
