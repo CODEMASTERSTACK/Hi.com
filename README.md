@@ -102,8 +102,8 @@ body {
      <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
     <a href="New Text Document.txt">Sample Source Code </a>
-    <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_nRd4X9.json"  background="transparent"  speed="1"  style="width: 160px; height: 160px;" hover loop  autoplay></lottie-player></center>
+    <marquee><center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_eHZRuUxa9i.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player></center></marquee>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
