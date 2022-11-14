@@ -99,6 +99,7 @@ body {
 <div class="topnav">
   <a href="New Text Document.html" class="active">Krish </a>
   <div id="myLinks">
+     <a href="game.html"> MUSIC </a>
      <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
     <a href="New Text Document.txt">Sample Source Code </a>
