@@ -46,7 +46,7 @@ body {
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  height: 1200px;
+  height: 1365px;
   color: white;
   border-radius: 5px;
 }
@@ -104,7 +104,7 @@ body {
     <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
     <a href="New Text Document.txt">Sample Source Code </a>
    <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_cevou807.json"  background="transparent"  speed="1"  style="width: 190px; height: 190px;"  loop  autoplay></lottie-player></center>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cixsdvaf.json"  background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -123,14 +123,13 @@ body {
 <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player></center></p>
  <h3> Updates </h3>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
-<p><h2> Download And Install Our Unit Converter App <h2>
- <a href="UnitConverterApp.apk" download="OURAPP">
- 
-<p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7j0nwmpl.json" alt="Our App" background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center></p>
+<center><h2> Download And Install Our Unit Converter App <h2></center>
+<a href="UnitConverterApp.apk" download="OURAPP">
+<center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7j0nwmpl.json" alt="Our App" background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center>
 </a>
-
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_nfusrybh.json"  background="transparent"  speed="1"  style="width: 450px; height: 300px;" hover loop  autoplay></lottie-player>
 
 
 <!-- End smartphone / tablet look -->
