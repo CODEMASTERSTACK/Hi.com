@@ -123,7 +123,7 @@ body {
 <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player></center></p>
  <h3> Updates </h3>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
-<center><h2> Download And Install Our Unit Converter App <h2></center>
+<h2> Download And Install Our Unit Converter App <h2>
 <a href="UnitConverterApp.apk" download="OURAPP">
 <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7j0nwmpl.json" alt="Our App" background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center>
