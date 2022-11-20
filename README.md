@@ -116,15 +116,15 @@ body {
 <center>
 </center>
 <center>
-<iframe src="https://giphy.com/embed/j1BN5f7iGBTauQ1aVH" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p></center>
+<iframe src="https://giphy.com/embed/j1BN5f7iGBTauQ1aVH" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player></center></p>
  <h3> Updates </h3>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
-<p><h2> Download And Install Our Unit Converter App <h2> </p>
-<P> <a href="UnitConverterApp.apk" download="OURAPP">
+<p><h2> Download And Install Our Unit Converter App <h2>
+ <a href="UnitConverterApp.apk" download="OURAPP">
  
 <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7j0nwmpl.json" alt="Our App" background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center></p>
