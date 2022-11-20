@@ -114,26 +114,6 @@ body {
 <div style="padding-left:16px">
 <p>
 <center>
-<h1> Updating In </h1>
-<h1 style="font-size: 2.5rem; color: #2ecc71">
-<p id="demo">
-<script>
- var countDownDate = new Date("Nov 13, 2022 16:00:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
 </h1>
 </center>
 <center>
@@ -144,6 +124,7 @@ var x = setInterval(function() {
 <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player></center></p>
  <h3> Updates </h3>
 <p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
+<p><h2> Download And Install Our Unit Converter App <h2> </p>
 <P> <a href="UnitConverterApp.apk" download="OURAPP">
  
 <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
