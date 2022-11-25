@@ -98,7 +98,7 @@ body {
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="New Text Document.html" class="active">Krish </a>
+  <a href="website.html" class="active">Krish </a>
   <div id="myLinks">
      <a href="game.html"> MUSIC </a>
      <a href="8 Ball game.html"> 8BALL Game </a>
