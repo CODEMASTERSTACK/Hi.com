@@ -98,13 +98,9 @@ body {
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="website.html" class="active">Krish </a>
+  <a href="website.html" class="active">View Portfolio </a>
   <div id="myLinks">
-     <a href="game.html"> MUSIC </a>
-     <a href="8 Ball game.html"> 8BALL Game </a>
-     <a href="puzzle.html"> Tickle Game </a>
-     <a href="tik tak game.html"> Tic Tac Game </a>
-    <a href="https://youtu.be/FqmYc62HUec">BTS-The Astronaut</a> 
+     <a href="game.html"> Amazing Day </a>
     <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="New Text Document.txt">Sample Source Code </a>
    <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -132,8 +128,6 @@ body {
 <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7j0nwmpl.json" alt="Our App" background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center>
 </a>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_nfusrybh.json"  background="transparent"  speed="1"  style="width: 300px; height: 270px;" hover loop  autoplay></lottie-player>
 
 
 <!-- End smartphone / tablet look -->
