@@ -100,6 +100,7 @@ body {
 <div class="topnav">
   <a href="website.html" class="active">View Portfolio </a>
   <div id="myLinks">
+  <a href="COMPONENTS.HTML"> Components Used </a>
      <a href="game.html"> Amazing Day </a>
     <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
     <a href="New Text Document.txt">Sample Source Code </a>
