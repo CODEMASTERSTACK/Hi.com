@@ -118,7 +118,8 @@ body {
 <center>
 </center>
 <center>
-<iframe src="https://giphy.com/clips/neonrated-neon-rated-films-lV6m2Iu2hzaZ7uFa5L" width="310" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></center>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_y7xcP4oERZ.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player></center>
   <h3>About This Website</h3>
   <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
  <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
