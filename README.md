@@ -1,156 +1,58 @@
-<html>
+<HTML>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-#mySidenav a {
-  position: fixed;
-  left: -90px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
-}
-
-#about {
-  top: 20px;
-  background-color: #04AA6D;
-}
-
-#blog {
-  top: 80px;
-  background-color: #2196F3;
-}
-
-#projects {
-  top: 140px;
-  background-color: #f44336;
-}
-
-#contact {
-  top: 200px;
-  background-color: #555
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 1440px;
-  color: white;
-  border-radius: 5px;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  
+    <title>test</title>
 </head>
 <body>
-<embed src="y2mate.com - INTERWORLD  METAMORPHOSIS.mp3" loop="true" autostart="true" width="2" height="0">
-<div id="mySidenav" class="sidenav">
-  <a href="https://www.instagram.com/xiuying_leo/" id="about">About</a>
-</div>
-<!-- Simulate a smartphone / tablet -->
-<div class="mobile-container">
-
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="website.html" class="active">View Portfolio </a>
-  <div id="myLinks">
-  <a href="COMPONENTS.HTML"> Components Used </a>
-     <a href="Music Chicker.html"> Music Chicker </a>
-    <a href="https://forms.gle/ZsEGVooMEuVvfewj6">Feedback</a>
-    <a href="New Text Document.txt">Sample Source Code </a>
-   <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cixsdvaf.json"  background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center>
+  <div class="main-container">
+    <!--first elements-->
+    <div class="x x-top">
+      <div class="plus left plus-top-left"></div>
+      <div class="plus right plus-top-right"></div>
+    </div>
+    <div class="video">
+      <div class="colors">
+        <div class="color1 color"></div><div class="color2 color"></div><div class="color3 color"></div><div class="color4 color"></div><div class="color5 color"></div>
+      </div>
+    </div>
+    <div class="x x-bottom">
+      <div class="plus left plus-bottom-left"></div>
+      <div class="plus right plus-bottom-right"></div>
+    </div>
+    <!--second elements-->
+    <div class="bg">KRISH</div>
+    <div class="arrow arrow-top">
+      <div class="head"></div>
+    </div>
+    <div class="arrow arrow-bottom">
+      <div class="head2"></div>
+    </div>
+    <div class='burger-btn'>
+      <div class='bur burger1'></div>
+      <div class=' bur burger2'></div>
+      <div class='bur burger3'></div>
+    </div>
+    <div class="big">HEYAA</div>
+    <div class="plus plus-center plus1"></div>
+    <div class="plus plus-center plus2"></div>
+    <div class="plus plus-center plus3"></div>
+    <div class="plus plus-center plus4"></div>
+    <div class="center-square"></div>
+    <div class="top-text first-text"><div class="this">WELCOME&nbsp;</div> <div class="is">TO&nbsp;</div> <div class="my">MY WEBSITE</div></div>
+    <div class="bottom-text first-text"><div class="this">I&nbsp;</div> <div class="is">HOPE&nbsp;</div> <div class="my">YOU WILL LIKE IT</div></div>
+    <!--third elements-->
+    <div class="projects">
+      <div class="row row-first"><a href="website.html" target="_blank"><div class="project binary"></div></a>
+    </div>
   </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<div style="padding-left:16px">
-<p>
-
-<center>
-</center>
-<center>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_y7xcP4oERZ.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player></center>
-  <h3>About This Website</h3>
-  <p> Hi.com is create for enjoyable purpose there's no intention to violate any rules and regulation . </p>
- <p> <center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mpucaxpXEm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player></center></p>
- <h3> Updates </h3>
-<p> There will be upcoming changes and updates on this website which makes this website more smooth and if you want to contribute in this website mail me the changes to adopt </p>
-<h2> Download And Install Our Unit Converter App <h2>
-<a href="UnitConverterApp.apk" download="OURAPP">
-<center><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7j0nwmpl.json" alt="Our App" background="transparent"  speed="1"  style="width: 190px; height: 190px;" hover loop  autoplay></lottie-player></center>
-</a>
-
-
-<!-- End smartphone / tablet look -->
-<style>
-body {
-  background-image: url('https://c4.wallpaperflare.com/wallpaper/519/895/746/halloween-4k-windows-for-desktop-wallpaper-preview.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-
+  
+</body>
+</html>
