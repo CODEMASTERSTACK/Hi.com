@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   
-    <title>test</title>
+    <title>KRISH</title>
 </head>
 <body>
-<embed src="y2mate.com - INTERWORLD  METAMORPHOSIS.mp3" loop="true" autostart="true" width="2" height="0">
   <div class="main-container">
     <!--first elements-->
     <div class="x x-top">
