@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Thasadith');
 
 body {
-  background-image: url(https://media.tenor.com/8vcd4Af2-QMAAAAM/aesthetic-snow.gif);
+  background-image: url(https://media.tenor.com/pJ11wax-w4oAAAAj/l3india-girl.gif);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
+  background-position-y: -50%;
+  background-position-x: 50%;
+
+
   font-family: 'Thasadith', sans-serif;
 }
 
 .clock {
-  color: whitesmoke;
+  background: linear-gradient(#eb7004 0%, #fbfbfd 30% ,#04b713 20%);
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 50%;
+  font-size: smaller;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -40,3 +44,26 @@ canvas {
 svg#snowflake {
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-position: center;
+    background-position-y: -30%;
+    background-position-x: 50%;
+  }
+
+  .clock {
+    font-size: smaller;
+    top: 60%;
+  }
+
+  p {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
