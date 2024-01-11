@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
+var countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -23,8 +23,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "WE WISH YOU A HAPPY NEW YEAR";
-    document.body.style.backgroundImage = "url(https://media2.giphy.com/media/RpHHzWCTyxArcRdOS0/giphy.gif?cid=ecf05e47xe0ks0jptmunwxl83llnauulox4zcnpoyf2mj64k&ep=v1_gifs_search&rid=giphy.gif)";
+    document.getElementById("demo").innerHTML = "WE WISH YOU A 75th REPUBLIC DAY";
+    document.body.style.backgroundImage = "url(https://media1.tenor.com/m/_m4qXqc3tUQAAAAC/republic-day-happy-republic-day2020.gif)";
   }
 }, 1000);
-
