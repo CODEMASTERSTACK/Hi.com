@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Set the background color */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px; /* Added padding to container */
+        }
+
+        .sidebar {
+            width: 25%;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            padding: 15px;
+            height: 92vh;
+            box-shadow: 0px 0px 3px gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff; /* Sidebar background color */
+        }
+
+        .fa-circle {
+            color: orangered;
+        }
+
+        .searchBar {
+            width: 100%;
+            background-color: #eee;
+            border-radius: 3px;
+            padding: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .img-box {
+            width: 100%;
+            height: 176px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px; /* Added border radius */
+            overflow: hidden; /* Added to hide overflow content */
+            margin-bottom: 20px; /* Added margin */
+        }
+
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        .glass:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fa-brands {
+            font-size: 25px;
+            margin: 0 10px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .fa-brands:hover {
+            color: orangered;
+        }
+
+        .data {
+            width: 73%;
+            border-radius: 3px;
+            height: 92vh;
+            overflow-y: auto;
+            background-color: #fff; /* Content area background color */
+            padding: 20px; /* Added padding to content area */
+        }
+
+        .top {
+            height: 60px;
+            border-radius: 3px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .header {
+            height: 200px;
+            border-radius: 3px;
+            background-color: #333;
+            margin: 3vh 0px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header p {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #root {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .box {
+            margin: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 176px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .images {
+            max-height: 90%;
+            max-width: 90%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .bottom {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 110px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: orangered;
+        }
+
+        button {
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            padding: 7px 25px;
+            cursor: pointer;
+            color: white;
+        }
+
+        button:hover {
+            background-color: orangered;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 25%;
+                margin-right: 20px;
+            }
+
+            .data {
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidehead">
+                <div class="dots">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle" style="color: #333;"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <hr style="margin: 15px 0; border: 1px solid #eee">
+            </div>
+            <div class="sidebody" style="height: 69vh;">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+                <img src="https://img.freepik.com/free-photo/lone-tree_181624-46361.jpg" alt="Your Image" style="width: 100%; max-height: 200px;">
+
+            </div>
+            <div class="sidefoot">
+                <hr style="margin: 15px 0; border: 1px solid #eee">
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="data">
+            <div class="top">
+                <p>PKRISH.INFO</p>
+               <p> <a href= "mailto:leosen.krish@gmail.com"> Request Notes</a> </p>
+            </div>
+            <div class="header">
+                <p>PICK YOUR NOTES</p>
+            </div>
+            <div class="body">
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const product = [{
+                id: 0,
+                image: 'CAB101.jpg',
+                title: 'CAB101',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1TJ2Db7_eX8qd4cuDH37DTqoTwYRhyrtE?usp=sharing'
+            },
+            {
+                id: 1,
+                image: 'CAB102.jpg',
+                title: 'CAB102',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1TJ2Db7_eX8qd4cuDH37DTqoTwYRhyrtE?usp=sharing'
+            },
+            {
+                id: 2,
+                image: 'CAP170.jpg',
+                title: 'CAB170',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1TB8Nj6RvPjG4FJdsBni96eTUUQDIvTQi?usp=sharing'
+            },
+            {
+                id: 3,
+                image: 'CAP171.jpg',
+                title: 'CAP171',
+                price: 'FREE,
+                link: 'https://drive.google.com/drive/folders/1eX41tfIUefcISetE6cRU0ODOacgGTazT?usp=sharing'
+            },
+            {
+                id: 4,
+                image: 'CAP172.jpg',
+                title: 'CAP172',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1gFh-RK2XRfKCGU1_A_iDhDNxqw800GMa?usp=sharing'
+            },
+            {
+                id: 5,
+                image: 'CAP173.jpg',
+                title: 'CAP173',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1aVrli4yyY5ZSewa7kXt506TM-hlB0_X-?usp=sharing'
+            },
+
+                 {
+                id: 6,
+                image: 'MTH136.jpg',
+                title: 'MTH136',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1SWMSgrGbZiQj5ylO-drfMdMgpxbWJhdx?usp=sharing'
+            },
+                {
+                id: 7,
+                image: 'PEL200.jpg',
+                title: 'PEL200',
+                price: 'FREE',
+                link: 'https://drive.google.com/drive/folders/1MFlHoFlr-d-fbuWBT0BleaZNiJN7ZSfL?usp=sharing'
+            },
+        ];
+
+        const categories = [...new Set(product.map((item) => {
+            return item
+        }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var {
+                    image,
+                    title,
+                    price,
+                    link
+                } = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div> 
+                        <div class='bottom'>
+                            <p>${title}</p>
+                            <h2>$ ${price}</h2>
+                        <button onclick="window.location.href='${link}'">Pick it</button>
+                        </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+
+    </script>
+</body>
+
+</html>
