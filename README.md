@@ -50,7 +50,7 @@
     <div class="bottom-text first-text"><div class="this">I&nbsp;</div> <div class="is">HOPE&nbsp;</div> <div class="my">YOU WILL LIKE IT</div></div>
     <!--third elements-->
     <div class="projects">
-      <div class="row row-first"><a href="website.html" target="_blank"><div class="project binary"></div></a>
+      <div class="row row-first"><a href="website.html" target="_top"><div class="project binary"></div></a>
     </div>
   </div>
   
