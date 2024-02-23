@@ -60,6 +60,26 @@
 
 </div>
 </div> 
+<div class="dropdown">
+    <button class="dropbtn animate">Study 🤓
+    <i class="fa fa-caret-down"></i>
+    <div class="dropdown-content">
+        <CENTER>
+     <a href="Notespage.html" Target="_blank">Notes</a>
+     <a class="mail-to-krish-button" href="mailto:leosen.krish@gmail.com">Request Notes</a>
+     <a href="https://makersuite.google.com/app/prompts?state=%7B%22ids%22%3A%5B%221prWLjljBdEvldl_jVMjZYeg4MDC5GJdt%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22110874585161938147550%22%2C%22resourceKeys%22%3A%7B%7D%7D&usp=sharing" target="_blank"> Gemini Ai </a>
+        </CENTER>
+    </div>
+    </div> 
+<div class="dropdown">
+<button class="dropbtn animate">Useful Links
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="https://jodies.de/ipcalc">IP Details</a>
+
+</div>
+</div>
     <a href="forest.html" class="animate"> Adventure </a>
 <a href="https://codemasterstack.github.io/Hi.com/" id="active" class="animate">Home</a>
 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
