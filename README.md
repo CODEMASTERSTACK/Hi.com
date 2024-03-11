@@ -11,7 +11,7 @@
     <h1>My Personal and Notes Site <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20"></h1>
     <p>
       Welcome to my personal and notes site! This site is publicly available on
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a> and contains a collection of notes on various topics, including programming, mathematics, and more.
+      <a href="http://pkrishs.info/" target="_blank" rel="noopener noreferrer">PKRISHS.INFO</a> and contains a collection of notes on various topics, including programming, mathematics, and more.
     </p>
     <h2>Features <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d1.png" alt="Notebook" width="20" height="20"></h2>
     <ul>
