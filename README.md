@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal and Notes Site</title>
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
@@ -63,9 +62,6 @@
   <CENTER>
     <h1> PKRISH.INFO </h1>
   </CENTER>
-    <CENTER>
-      <H1>PKRISHS.INFO</H1>
-    </CENTER>
     <h1>My Personal and Notes Site <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20"></h1>
     <p>
       Welcome to my personal and notes site! This site is publicly available on
@@ -86,3 +82,6 @@
     <h2>Getting Started <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d3.png" alt="Construction" width="20" height="20"></h2>
     <p>
       To get started with the code, simply clone the repository to your local
+    </BODY>
+</html>
+    
