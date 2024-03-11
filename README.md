@@ -63,6 +63,9 @@
   <CENTER>
     <h1> PKRISH.INFO </h1>
   </CENTER>
+    <CENTER>
+      <H1>PKRISHS.INFO</H1>
+    </CENTER>
     <h1>My Personal and Notes Site <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20"></h1>
     <p>
       Welcome to my personal and notes site! This site is publicly available on
