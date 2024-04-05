@@ -16,14 +16,14 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* Set the background color */
+            background-color: #f0f0f0; 
         }
 
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px; /* Added padding to container */
+            padding: 20px; 
         }
 
         .sidebar {
@@ -36,7 +36,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: #fff; /* Sidebar background color */
+            background-color: #fff; 
         }
 
         .fa-circle {
@@ -59,9 +59,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px; /* Added border radius */
-            overflow: hidden; /* Added to hide overflow content */
-            margin-bottom: 20px; /* Added margin */
+            border-radius: 10px; 
+            overflow: hidden; 
+            margin-bottom: 20px; 
         }
 
 
@@ -98,8 +98,8 @@
             border-radius: 3px;
             height: 92vh;
             overflow-y: auto;
-            background-color: #fff; /* Content area background color */
-            padding: 20px; /* Added padding to content area */
+            background-color: #fff; 
+            padding: 20px; 
         }
 
         .top {
@@ -216,6 +216,81 @@
                 width: 75%;
             }
         }
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+    #chat-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    #chat-header {
+        padding: 15px;
+        background-color: #007bff;
+        color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #chat-messages {
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 15px;
+    }
+    .message {
+        margin-bottom: 10px;
+    }
+    .message strong {
+        font-weight: bold;
+        color: #007bff;
+    }
+    #user-input {
+        width: calc(95% - 18px);
+        margin: 5px 3px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+    #send-button {
+        width: calc(100% - 20px);
+        margin: 5px 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #toggle-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-image: url('https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsX29mZmljZV8yOF9mZW1hbGVfbWluaW1hbF9yb2JvdF9mYWNlX29uX2RhcmtfYmFja2dyb3VuZF81ZDM3YjhlNy04MjRkLTQ0NWUtYjZjYy1hZmJkMDI3ZTE1NmYucG5n.png');
+        background-blend-mode: overlay;
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .close-icon {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
     </style>
 </head>
 
@@ -441,6 +516,128 @@
         displayItem(categories);
 
     </script>
+
+<button id="toggle-button" onclick="toggleChat()"></button>
+
+<div id="chat-container">
+    <div id="chat-header">
+        Chat
+        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" onclick="toggleChat()">
+            <path fill-rule="evenodd" d="M4.177 4.177a.75.75 0 0 1 1.061 1.06L8 8.06l2.762-2.762a.75.75 0 1 1 1.06 1.06L9.06 9.12l2.763 2.762a.75.75 0 1 1-1.06 1.06L8 10.12l-2.762 2.762a.75.75 0 0 1-1.06-1.06L6.94 9.06 4.177 6.297a.75.75 0 0 1 0-1.06z"></path>
+        </svg>
+    </div>
+    <div id="chat-messages"></div>
+    <input type="text" id="user-input" placeholder="Type here...">
+    <button id="send-button">Send</button>
+</div>
+
+<script>
+let chatVisible = false;
+let chatTimeout;
+
+function toggleChat() {
+    const chatContainer = document.getElementById('chat-container');
+    const toggleButton = document.getElementById('toggle-button');
+
+    chatVisible = !chatVisible;
+
+    if (chatVisible) {
+        clearTimeout(chatTimeout); // Clear any existing timeout
+        chatContainer.style.display = 'block';
+        chatContainer.style.height = 'auto'; // Reset height
+        toggleButton.style.display = 'none'; // Hide the toggle button
+    } else {
+        chatContainer.style.height = '0'; // Minimize the chat window
+        chatTimeout = setTimeout(() => {
+            chatContainer.style.display = 'none'; // Hide the chat window after a delay
+        }, 50);
+        toggleButton.style.display = 'block'; // Show the toggle button
+    }
+}
+
+function resetChatTimeout() {
+    clearTimeout(chatTimeout); // Clear any existing timeout
+    if (!chatVisible) {
+        toggleChat(); // Expand the chat window if it's currently minimized
+    }
+    chatTimeout = setTimeout(() => {
+        toggleChat(); // Minimize the chat window after a period of inactivity
+    }, 10000); // Set timeout for 10 seconds (adjust as needed)
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const chatMessages = document.getElementById('chat-messages');
+    const userInput = document.getElementById('user-input');
+    const sendButton = document.getElementById('send-button');
+
+    function sendMessage(sender, message) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message');
+        messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        resetChatTimeout(); 
+    }
+
+    function processUserInput() {
+        const userInputText = userInput.value.trim();
+        if (userInputText !== '') {
+            sendMessage('You', userInputText);
+            // Process user input and generate bot response
+            const botResponse = generateBotResponse(userInputText);
+            sendMessage('Bot', botResponse);
+            userInput.value = ''; 
+        }
+    }
+
+    function generateBotResponse(userInput) {
+        const responses = {
+            "hello": "Hello! Welcome to our website. How can I assist you today?",
+            "hi": "Hello! Welcome to our website. How can I assist you today?",
+            "howdy": "Hello! Welcome to our website. How can I assist you today?",
+            "hey": "Hello! Welcome to our website. How can I assist you today?",
+            "notewise": "NoteWise is a simple application made for the ease to excess notes just by using our app. You can download it from Study section and then NoteWise",
+            
+            "hey there": "Hello! Welcome to our website. How can I assist you today?",
+            "how are you": "How are you doing today?",
+            "how are you doing": "How am I doing? Do you need any help?",
+            "about": "Our website provides Quality of notes and it is developed by Krish. How can I assist you further?",
+            "contact": "You can contact us at leosen.krish@gmail.com. We're available Monday to Sunday, from 9 am to 5 pm.",
+            "thanks": "I'm honoured to serve you today!",
+            "krish": "I'm glad you entered the owner of this site. Thanks!",
+
+            // Add more predefined responses here
+        };
+        
+        // Check if the user input matches any predefined responses
+        for (const [keyword, response] of Object.entries(responses)) {
+            if (userInput.toLowerCase().includes(keyword)) {
+                return response;
+            }
+        }
+
+        // If no predefined response matches, return a default response
+        return "I'm sorry, I didn't understand that. Can you please be more specific?";
+    }
+
+    userInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            processUserInput();
+        }
+    });
+
+    sendButton.addEventListener('click', function() {
+        processUserInput();
+    });
+
+    // Initial greeting message
+    sendMessage('Bot', 'This Chat Bot Is On Testing Now');
+    sendMessage('Bot', 'Hello! Welcome to our website. How can I assist you today?');
+
+    // Start the chat timeout countdown
+    resetChatTimeout();
+});
+</script>
 </body>
 
 </html>
