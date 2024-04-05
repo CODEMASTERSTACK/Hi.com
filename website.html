@@ -56,6 +56,59 @@ background: gray;
 background: var(--paleblue);
 }
 
+
+/***************************
+         Pop-Up
+***************************/
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        text-align: center;
+        animation: fadeIn 0.3s ease forwards;
+    }
+    .popup img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .popup p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .popup button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #8b79f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .popup button:hover {
+        background-color: #45a049;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .blur {
+        filter: blur(5px);
+    }
 /***************************
          DEFAULT
 ***************************/
@@ -1238,6 +1291,12 @@ background-color:#b8bca7;
 </style>
 </head>
 <body>
+<div id="popup" class="popup">
+<img src="NoteWise_Logo.png" alt="Popup Image">
+<p>We have created an App <b>"NoteWise"</b> in which you can excess the notes just by opening our app and select the subject. </p>
+<center><a href="NoteWise.apk"> Download </a></center>
+<button onclick="closePopup()">OKAY</button>
+</div>
 <embed src="" loop="true" autostart="true" width="2" height="0">
 <header>
 <section>
@@ -1535,7 +1594,11 @@ document.getElementById("navbar").style.top = "-100px";
 document.getElementById("roll_back").style.display = "none";
 }
 }
-
+var popup = document.getElementById("popup");
+    popup.style.display = "block";
+    function closePopup() {
+        popup.style.display = "none";
+    }
 </script>
 
 </body>
