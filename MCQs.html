@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAB201 MCQs</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .question {
+            margin: 20px 0;
+        }
+
+        .question h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555555;
+        }
+
+        .question label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .question button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .question button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MCQ Quiz</h1>
+        <center>
+        <h2> UNIT 4</h2>
+        </center>
+        <hr>
+        <div id="quiz">
+            <div class="question">
+                <h2>1. What is a drill-through in IBM Cognos Analytics?</h2>
+                <label><input type="radio" name="q1" value="a"> A. A way to export reports</label><br>
+                <label><input type="radio" name="q1" value="b"> B. A method to navigate from one report to another</label><br>
+                <label><input type="radio" name="q1" value="c"> C. A feature to add charts</label><br>
+                <label><input type="radio" name="q1" value="d"> D. A data encryption technique</label><br>
+                <button onclick="checkAnswer('q1', 'b', 'result1')">Check Answer</button>
+                <div id="result1" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>2. How do you enable drill-through from a specific report to a target report?</h2>
+                <label><input type="radio" name="q2" value="a"> A. By using a hyperlink</label><br>
+                <label><input type="radio" name="q2" value="b"> B. By setting up a drill-through definition</label><br>
+                <label><input type="radio" name="q2" value="c"> C. By embedding SQL queries</label><br>
+                <label><input type="radio" name="q2" value="d"> D. By using a macro</label><br>
+                <button onclick="checkAnswer('q2', 'b', 'result2')">Check Answer</button>
+                <div id="result2" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>3. Which property must be set to allow a drill-through from a source report?</h2>
+                <label><input type="radio" name="q3" value="a"> A. Data source</label><br>
+                <label><input type="radio" name="q3" value="b"> B. Drill-through target</label><br>
+                <label><input type="radio" name="q3" value="c"> C. Report format</label><br>
+                <label><input type="radio" name="q3" value="d"> D. Column width</label><br>
+                <button onclick="checkAnswer('q3', 'b', 'result3')">Check Answer</button>
+                <div id="result3" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>4. How can you pass parameter values to a drill-through target report?</h2>
+                <label><input type="radio" name="q4" value="a"> A. By using a macro</label><br>
+                <label><input type="radio" name="q4" value="b"> B. By configuring the parameter mapping</label><br>
+                <label><input type="radio" name="q4" value="c"> C. By writing custom SQL</label><br>
+                <label><input type="radio" name="q4" value="d"> D. By using a static filter</label><br>
+                <button onclick="checkAnswer('q4', 'b', 'result4')">Check Answer</button>
+                <div id="result4" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>5. Which parameter type allows for dynamic user input in drill-through targets?</h2>
+                <label><input type="radio" name="q5" value="a"> A. Static parameter</label><br>
+                <label><input type="radio" name="q5" value="b"> B. Session parameter</label><br>
+                <label><input type="radio" name="q5" value="c"> C. Prompt parameter</label><br>
+                <label><input type="radio" name="q5" value="d"> D. Query parameter</label><br>
+                <button onclick="checkAnswer('q5', 'c', 'result5')">Check Answer</button>
+                <div id="result5" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>6. What must be consistent between the source report and the target report for parameters to work correctly?</h2>
+                <label><input type="radio" name="q6" value="a"> A. Data format</label><br>
+                <label><input type="radio" name="q6" value="b"> B. Parameter names</label><br>
+                <label><input type="radio" name="q6" value="c"> C. Report title</label><br>
+                <label><input type="radio" name="q6" value="d"> D. Column order</label><br>
+                <button onclick="checkAnswer('q6', 'b', 'result6')">Check Answer</button>
+                <div id="result6" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>7. What feature in IBM Cognos Analytics allows users to navigate through multiple reports easily?</h2>
+                <label><input type="radio" name="q7" value="a"> A. Drill-through</label><br>
+                <label><input type="radio" name="q7" value="b"> B. Report books</label><br>
+                <label><input type="radio" name="q7" value="c"> C. Dashboard navigation</label><br>
+                <label><input type="radio" name="q7" value="d"> D. Page explorer</label><br>
+                <button onclick="checkAnswer('q7', 'b', 'result7')">Check Answer</button>
+                <div id="result7" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>8. Which component is essential for creating a seamless navigation experience between multiple reports?</h2>
+                <label><input type="radio" name="q8" value="a"> A. Data module</label><br>
+                <label><input type="radio" name="q8" value="b"> B. Navigation path</label><br>
+                <label><input type="radio" name="q8" value="c"> C. Data server</label><br>
+                <label><input type="radio" name="q8" value="d"> D. Theme</label><br>
+                <button onclick="checkAnswer('q8', 'b', 'result8')">Check Answer</button>
+                <div id="result8" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>9. What is the benefit of using report books in Cognos Analytics?</h2>
+                <label><input type="radio" name="q9" value="a"> A. They reduce data size</label><br>
+                <label><input type="radio" name="q9" value="b"> B. They allow batch processing of reports</label><br>
+                <label><input type="radio" name="q9" value="c"> C. They facilitate navigation between related reports</label><br>
+                <label><input type="radio" name="q9" value="d"> D. They enhance security</label><br>
+                <button onclick="checkAnswer('q9', 'c', 'result9')">Check Answer</button>
+                <div id="result9" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>10. Which setting can you use to force a page break in a report?</h2>
+                <label><input type="radio" name="q10" value="a"> A. Page Layout</label><br>
+                <label><input type="radio" name="q10" value="b"> B. Section Break</label><br>
+                <label><input type="radio" name="q10" value="c"> C. Conditional Style</label><br>
+                <label><input type="radio" name="q10" value="d"> D. Page Set</label><br>
+                <button onclick="checkAnswer('q10', 'd', 'result10')">Check Answer</button>
+                <div id="result10" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>11. Where can you specify a page break in IBM Cognos Analytics?</h2>
+                <label><input type="radio" name="q11" value="a"> A. In the report header</label><br>
+                <label><input type="radio" name="q11" value="b"> B. In the footer section</label><br>
+                <label><input type="radio" name="q11" value="c"> C. In the Page Explorer</label><br>
+                <label><input type="radio" name="q11" value="d"> D. In the List or Crosstab properties</label><br>
+                <button onclick="checkAnswer('q11', 'd', 'result11')">Check Answer</button>
+                <div id="result11" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>12. What is a common use of page breaks in reports?</h2>
+                <label><input type="radio" name="q12" value="a"> A. To improve report performance</label><br>
+                <label><input type="radio" name="q12" value="b"> B. To separate different sections of a report</label><br>
+                <label><input type="radio" name="q12" value="c"> C. To enhance report security</label><br>
+                <label><input type="radio" name="q12" value="d"> D. To format numeric data</label><br>
+                <button onclick="checkAnswer('q12', 'b', 'result12')">Check Answer</button>
+                <div id="result12" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>13. What is the first step in modifying an existing report structure?</h2>
+                <label><input type="radio" name="q13" value="a"> A. Opening the report in Report Studio</label><br>
+                <label><input type="radio" name="q13" value="b"> B. Exporting the report data</label><br>
+                <label><input type="radio" name="q13" value="c"> C. Running the report</label><br>
+                <label><input type="radio" name="q13" value="d"> D. Saving a copy of the report</label><br>
+                <button onclick="checkAnswer('q13', 'a', 'result13')">Check Answer</button>
+                <div id="result13" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>14. How can you change the layout of an existing report?</h2>
+                <label><input type="radio" name="q14" value="a"> A. By modifying the SQL query</label><br>
+                <label><input type="radio" name="q14" value="b"> B. By using the Page Layout tool</label><br>
+                <label><input type="radio" name="q14" value="c"> C. By editing the XML source</label><br>
+                <label><input type="radio" name="q14" value="d"> D. By dragging and dropping report items</label><br>
+                <button onclick="checkAnswer('q14', 'd', 'result14')">Check Answer</button>
+                <div id="result14" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>15. Which component allows for the rearrangement of report objects?</h2>
+                <label><input type="radio" name="q15" value="a"> A. Report Data</label><br>
+                <label><input type="radio" name="q15" value="b"> B. Report Viewer</label><br>
+                <label><input type="radio" name="q15" value="c"> C. Query Explorer</label><br>
+                <label><input type="radio" name="q15" value="d"> D. Layout Component Reference</label><br>
+                <button onclick="checkAnswer('q15', 'd', 'result15')">Check Answer</button>
+                <div id="result15" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>16. What is horizontal formatting in a report?</h2>
+                <label><input type="radio" name="q16" value="a"> A. Adjusting row heights</label><br>
+                <label><input type="radio" name="q16" value="b"> B. Setting column widths and alignments</label><br>
+                <label><input type="radio" name="q16" value="c"> C. Changing page orientation to landscape</label><br>
+                <label><input type="radio" name="q16" value="d"> D. Adding horizontal page breaks</label><br>
+                <button onclick="checkAnswer('q16', 'b', 'result16')">Check Answer</button>
+                <div id="result16" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>17. How can you apply consistent horizontal formatting across multiple columns?</h2>
+                <label><input type="radio" name="q17" value="a"> A. By using the Query Explorer</label><br>
+                <label><input type="radio" name="q17" value="b"> B. By setting column styles</label><br>
+                <label><input type="radio" name="q17" value="c"> C. By using the Group feature</label><br>
+                <label><input type="radio" name="q17" value="d"> D. By applying conditional formatting</label><br>
+                <button onclick="checkAnswer('q17', 'b', 'result17')">Check Answer</button>
+                <div id="result17" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>18. Which property controls the text alignment within a column?</h2>
+                <label><input type="radio" name="q18" value="a"> A. Font Style</label><br>
+                <label><input type="radio" name="q18" value="b"> B. Text Alignment</label><br>
+                <label><input type="radio" name="q18" value="c"> C. Column Width</label><br>
+                <label><input type="radio" name="q18" value="d"> D. Border Style</label><br>
+                <button onclick="checkAnswer('q18', 'b', 'result18')">Check Answer</button>
+                <div id="result18" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>19. Where can you specify print options for a PDF report in Cognos Analytics?</h2>
+                <label><input type="radio" name="q19" value="a"> A. Report Page Properties</label><br>
+                <label><input type="radio" name="q19" value="b"> B. PDF Options in the Properties Pane</label><br>
+                <label><input type="radio" name="q19" value="c"> C. Query Explorer</label><br>
+                <label><input type="radio" name="q19" value="d"> D. Page Explorer</label><br>
+                <button onclick="checkAnswer('q19', 'b', 'result19')">Check Answer</button>
+                <div id="result19" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>20. Which option allows you to control the size of the output PDF?</h2>
+                <label><input type="radio" name="q20" value="a"> A. Page Layout</label><br>
+                <label><input type="radio" name="q20" value="b"> B. Page Size</label><br>
+                <label><input type="radio" name="q20" value="c"> C. PDF Compression</label><br>
+                <label><input type="radio" name="q20" value="d"> D. Print Resolution</label><br>
+                <button onclick="checkAnswer('q20', 'b', 'result20')">Check Answer</button>
+                <div id="result20" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>21. How can you ensure a report is optimized for printing?</h2>
+                <label><input type="radio" name="q21" value="a"> A. By using landscape orientation</label><br>
+                <label><input type="radio" name="q21" value="b"> B. By previewing the report in PDF format</label><br>
+                <label><input type="radio" name="q21" value="c"> C. By reducing data size</label><br>
+                <label><input type="radio" name="q21" value="d"> D. By using conditional formatting</label><br>
+                <button onclick="checkAnswer('q21', 'b', 'result21')">Check Answer</button>
+                <div id="result21" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>22. What is the primary function of IBM Cognos Analytics?</h2>
+                <label><input type="radio" name="q22" value="a"> A. Data storage</label><br>
+                <label><input type="radio" name="q22" value="b"> B. Data visualization and reporting</label><br>
+                <label><input type="radio" name="q22" value="c"> C. Network security</label><br>
+                <label><input type="radio" name="q22" value="d"> D. System integration</label><br>
+                <button onclick="checkAnswer('q22', 'b', 'result22')">Check Answer</button>
+                <div id="result22" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>23. How does IBM Cognos Analytics integrate within an enterprise analytics solution?</h2>
+                <label><input type="radio" name="q23" value="a"> A. As a standalone data warehouse</label><br>
+                <label><input type="radio" name="q23" value="b"> B. As a reporting and data visualization layer</label><br>
+                <label><input type="radio" name="q23" value="c"> C. As a database management system</label><br>
+                <label><input type="radio" name="q23" value="d"> D. As an ETL tool</label><br>
+                <button onclick="checkAnswer('q23', 'b', 'result23')">Check Answer</button>
+                <div id="result23" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>24. Which feature of IBM Cognos Analytics supports decision-making processes?</h2>
+                <label><input type="radio" name="q24" value="a"> A. Data encryption</label><br>
+                <label><input type="radio" name="q24" value="b"> B. Interactive dashboards</label><br>
+                <label><input type="radio" name="q24" value="c"> C. System monitoring</label><br>
+                <label><input type="radio" name="q24" value="d"> D. Network analysis</label><br>
+                <button onclick="checkAnswer('q24', 'b', 'result24')">Check Answer</button>
+                <div id="result24" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>25. Which component of IBM Cognos Analytics is used to create and edit reports?</h2>
+                <label><input type="radio" name="q25" value="a"> A. Data Module</label><br>
+                <label><input type="radio" name="q25" value="b"> B. Report Studio</label><br>
+                <label><input type="radio" name="q25" value="c"> C. Query Studio</label><br>
+                <label><input type="radio" name="q25" value="d"> D. Framework Manager</label><br>
+                <button onclick="checkAnswer('q25', 'b', 'result25')">Check Answer</button>
+                <div id="result25" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>26. What is the role of IBM Cognos Framework Manager?</h2>
+                <label><input type="radio" name="q26" value="a"> A. To create dashboards</label><br>
+                <label><input type="radio" name="q26" value="b"> B. To define metadata models</label><br>
+                <label><input type="radio" name="q26" value="c"> C. To generate SQL queries</label><br>
+                <label><input type="radio" name="q26" value="d"> D. To manage user security</label><br>
+                <button onclick="checkAnswer('q26', 'b', 'result26')">Check Answer</button>
+                <div id="result26" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>27. Which component provides a drag-and-drop interface for creating data modules?</h2>
+                <label><input type="radio" name="q27" value="a"> A. Data Server</label><br>
+                <label><input type="radio" name="q27" value="b"> B. Report Viewer</label><br>
+                <label><input type="radio" name="q27" value="c"> C. Data Module Designer</label><br>
+                <label><input type="radio" name="q27" value="d"> D. Query Explorer</label><br>
+                <button onclick="checkAnswer('q27', 'c', 'result27')">Check Answer</button>
+                <div id="result27" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>28. What is a primary security feature in IBM Cognos Analytics?</h2>
+                <label><input type="radio" name="q28" value="a"> A. Data encryption</label><br>
+                <label><input type="radio" name="q28" value="b"> B. Role-based access control</label><br>
+                <label><input type="radio" name="q28" value="c"> C. Report caching</label><br>
+                <label><input type="radio" name="q28" value="d"> D. Data compression</label><br>
+                <button onclick="checkAnswer('q28', 'b', 'result28')">Check Answer</button>
+                <div id="result28" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>29. How does role-based access control enhance security in Cognos Analytics?</h2>
+                <label><input type="radio" name="q29" value="a"> A. By encrypting user data</label><br>
+                <label><input type="radio" name="q29" value="b"> B. By defining user permissions based on roles</label><br>
+                <label><input type="radio" name="q29" value="c"> C. By compressing data</label><br>
+                <label><input type="radio" name="q29" value="d"> D. By improving query performance</label><br>
+                <button onclick="checkAnswer('q29', 'b', 'result29')">Check Answer</button>
+                <div id="result29" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>30. Which component manages authentication in IBM Cognos Analytics?</h2>
+                <label><input type="radio" name="q30" value="a"> A. Report Studio</label><br>
+                <label><input type="radio" name="q30" value="b"> B. Cognos Access Manager</label><br>
+                <label><input type="radio" name="q30" value="c"> C. Framework Manager</label><br>
+                <label><input type="radio" name="q30" value="d"> D. Data Module Designer</label><br>
+                <button onclick="checkAnswer('q30', 'b', 'result30')">Check Answer</button>
+                <div id="result30" class="result"></div>
+            </div>
+        </div>
+    </div>
+<script>
+
+function checkAnswer(question, correctAnswer, resultId) {
+  const form = document.getElementById('quiz');
+  const resultDiv = document.getElementById(resultId);
+  const userAnswer = form.querySelector(`input[name="${question}"]:checked`);
+
+  if (userAnswer) {
+      if (userAnswer.value === correctAnswer) {
+          resultDiv.textContent = 'Correct!';
+          resultDiv.classList.add('correct');
+          resultDiv.classList.remove('incorrect');
+      } else {
+          resultDiv.textContent = `Incorrect. The correct answer is ${correctAnswer.toUpperCase()}.`;
+          resultDiv.classList.add('incorrect');
+          resultDiv.classList.remove('correct');
+      }
+  } else {
+      resultDiv.textContent = 'Please select an answer.';
+      resultDiv.classList.remove('correct');
+      resultDiv.classList.remove('incorrect');
+  }
+}
+
+</script>
+</body>
+</html>
