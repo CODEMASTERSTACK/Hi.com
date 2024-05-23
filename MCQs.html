@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAB201 MCQs</title>
     <style>
-         body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
@@ -29,6 +29,25 @@
         h1 {
             text-align: center;
             color: #333333;
+        }
+
+        .unit-selection {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .unit-selection button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .unit-selection button:hover {
+            background-color: #0056b3;
         }
 
         .question {
@@ -78,311 +97,626 @@
             color: red;
         }
     </style>
+    <script>
+        function showUnit(unit) {
+            var units = document.querySelectorAll('.unit');
+            units.forEach(function(element) {
+                element.style.display = 'none';
+            });
+
+            var selectedUnit = document.getElementById(unit);
+            if (selectedUnit) {
+                selectedUnit.style.display = 'block';
+            }
+        }
+
+        function checkAnswer(question, correctAnswer, resultId) {
+            var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
+            var resultElement = document.getElementById(resultId);
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    resultElement.textContent = 'Correct!';
+                    resultElement.className = 'result correct';
+                } else {
+                    resultElement.innerHTML = '<span class="incorrect">Incorrect. The correct answer is ' + correctAnswer + '.</span>';
+                    resultElement.className = 'result incorrect';
+                }
+            } else {
+                resultElement.textContent = 'Please select an answer!';
+                resultElement.className = 'result incorrect';
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1>MCQ Quiz</h1>
-        <center>
-        <h2> UNIT 4</h2>
-        </center>
-        <hr>
-        <div id="quiz">
-            <div class="question">
-                <h2>1. What is a drill-through in IBM Cognos Analytics?</h2>
-                <label><input type="radio" name="q1" value="a"> A. A way to export reports</label><br>
-                <label><input type="radio" name="q1" value="b"> B. A method to navigate from one report to another</label><br>
-                <label><input type="radio" name="q1" value="c"> C. A feature to add charts</label><br>
-                <label><input type="radio" name="q1" value="d"> D. A data encryption technique</label><br>
-                <button onclick="checkAnswer('q1', 'b', 'result1')">Check Answer</button>
-                <div id="result1" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>2. How do you enable drill-through from a specific report to a target report?</h2>
-                <label><input type="radio" name="q2" value="a"> A. By using a hyperlink</label><br>
-                <label><input type="radio" name="q2" value="b"> B. By setting up a drill-through definition</label><br>
-                <label><input type="radio" name="q2" value="c"> C. By embedding SQL queries</label><br>
-                <label><input type="radio" name="q2" value="d"> D. By using a macro</label><br>
-                <button onclick="checkAnswer('q2', 'b', 'result2')">Check Answer</button>
-                <div id="result2" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>3. Which property must be set to allow a drill-through from a source report?</h2>
-                <label><input type="radio" name="q3" value="a"> A. Data source</label><br>
-                <label><input type="radio" name="q3" value="b"> B. Drill-through target</label><br>
-                <label><input type="radio" name="q3" value="c"> C. Report format</label><br>
-                <label><input type="radio" name="q3" value="d"> D. Column width</label><br>
-                <button onclick="checkAnswer('q3', 'b', 'result3')">Check Answer</button>
-                <div id="result3" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>4. How can you pass parameter values to a drill-through target report?</h2>
-                <label><input type="radio" name="q4" value="a"> A. By using a macro</label><br>
-                <label><input type="radio" name="q4" value="b"> B. By configuring the parameter mapping</label><br>
-                <label><input type="radio" name="q4" value="c"> C. By writing custom SQL</label><br>
-                <label><input type="radio" name="q4" value="d"> D. By using a static filter</label><br>
-                <button onclick="checkAnswer('q4', 'b', 'result4')">Check Answer</button>
-                <div id="result4" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>5. Which parameter type allows for dynamic user input in drill-through targets?</h2>
-                <label><input type="radio" name="q5" value="a"> A. Static parameter</label><br>
-                <label><input type="radio" name="q5" value="b"> B. Session parameter</label><br>
-                <label><input type="radio" name="q5" value="c"> C. Prompt parameter</label><br>
-                <label><input type="radio" name="q5" value="d"> D. Query parameter</label><br>
-                <button onclick="checkAnswer('q5', 'c', 'result5')">Check Answer</button>
-                <div id="result5" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>6. What must be consistent between the source report and the target report for parameters to work correctly?</h2>
-                <label><input type="radio" name="q6" value="a"> A. Data format</label><br>
-                <label><input type="radio" name="q6" value="b"> B. Parameter names</label><br>
-                <label><input type="radio" name="q6" value="c"> C. Report title</label><br>
-                <label><input type="radio" name="q6" value="d"> D. Column order</label><br>
-                <button onclick="checkAnswer('q6', 'b', 'result6')">Check Answer</button>
-                <div id="result6" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>7. What feature in IBM Cognos Analytics allows users to navigate through multiple reports easily?</h2>
-                <label><input type="radio" name="q7" value="a"> A. Drill-through</label><br>
-                <label><input type="radio" name="q7" value="b"> B. Report books</label><br>
-                <label><input type="radio" name="q7" value="c"> C. Dashboard navigation</label><br>
-                <label><input type="radio" name="q7" value="d"> D. Page explorer</label><br>
-                <button onclick="checkAnswer('q7', 'b', 'result7')">Check Answer</button>
-                <div id="result7" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>8. Which component is essential for creating a seamless navigation experience between multiple reports?</h2>
-                <label><input type="radio" name="q8" value="a"> A. Data module</label><br>
-                <label><input type="radio" name="q8" value="b"> B. Navigation path</label><br>
-                <label><input type="radio" name="q8" value="c"> C. Data server</label><br>
-                <label><input type="radio" name="q8" value="d"> D. Theme</label><br>
-                <button onclick="checkAnswer('q8', 'b', 'result8')">Check Answer</button>
-                <div id="result8" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>9. What is the benefit of using report books in Cognos Analytics?</h2>
-                <label><input type="radio" name="q9" value="a"> A. They reduce data size</label><br>
-                <label><input type="radio" name="q9" value="b"> B. They allow batch processing of reports</label><br>
-                <label><input type="radio" name="q9" value="c"> C. They facilitate navigation between related reports</label><br>
-                <label><input type="radio" name="q9" value="d"> D. They enhance security</label><br>
-                <button onclick="checkAnswer('q9', 'c', 'result9')">Check Answer</button>
-                <div id="result9" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>10. Which setting can you use to force a page break in a report?</h2>
-                <label><input type="radio" name="q10" value="a"> A. Page Layout</label><br>
-                <label><input type="radio" name="q10" value="b"> B. Section Break</label><br>
-                <label><input type="radio" name="q10" value="c"> C. Conditional Style</label><br>
-                <label><input type="radio" name="q10" value="d"> D. Page Set</label><br>
-                <button onclick="checkAnswer('q10', 'd', 'result10')">Check Answer</button>
-                <div id="result10" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>11. Where can you specify a page break in IBM Cognos Analytics?</h2>
-                <label><input type="radio" name="q11" value="a"> A. In the report header</label><br>
-                <label><input type="radio" name="q11" value="b"> B. In the footer section</label><br>
-                <label><input type="radio" name="q11" value="c"> C. In the Page Explorer</label><br>
-                <label><input type="radio" name="q11" value="d"> D. In the List or Crosstab properties</label><br>
-                <button onclick="checkAnswer('q11', 'd', 'result11')">Check Answer</button>
-                <div id="result11" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>12. What is a common use of page breaks in reports?</h2>
-                <label><input type="radio" name="q12" value="a"> A. To improve report performance</label><br>
-                <label><input type="radio" name="q12" value="b"> B. To separate different sections of a report</label><br>
-                <label><input type="radio" name="q12" value="c"> C. To enhance report security</label><br>
-                <label><input type="radio" name="q12" value="d"> D. To format numeric data</label><br>
-                <button onclick="checkAnswer('q12', 'b', 'result12')">Check Answer</button>
-                <div id="result12" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>13. What is the first step in modifying an existing report structure?</h2>
-                <label><input type="radio" name="q13" value="a"> A. Opening the report in Report Studio</label><br>
-                <label><input type="radio" name="q13" value="b"> B. Exporting the report data</label><br>
-                <label><input type="radio" name="q13" value="c"> C. Running the report</label><br>
-                <label><input type="radio" name="q13" value="d"> D. Saving a copy of the report</label><br>
-                <button onclick="checkAnswer('q13', 'a', 'result13')">Check Answer</button>
-                <div id="result13" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>14. How can you change the layout of an existing report?</h2>
-                <label><input type="radio" name="q14" value="a"> A. By modifying the SQL query</label><br>
-                <label><input type="radio" name="q14" value="b"> B. By using the Page Layout tool</label><br>
-                <label><input type="radio" name="q14" value="c"> C. By editing the XML source</label><br>
-                <label><input type="radio" name="q14" value="d"> D. By dragging and dropping report items</label><br>
-                <button onclick="checkAnswer('q14', 'd', 'result14')">Check Answer</button>
-                <div id="result14" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>15. Which component allows for the rearrangement of report objects?</h2>
-                <label><input type="radio" name="q15" value="a"> A. Report Data</label><br>
-                <label><input type="radio" name="q15" value="b"> B. Report Viewer</label><br>
-                <label><input type="radio" name="q15" value="c"> C. Query Explorer</label><br>
-                <label><input type="radio" name="q15" value="d"> D. Layout Component Reference</label><br>
-                <button onclick="checkAnswer('q15', 'd', 'result15')">Check Answer</button>
-                <div id="result15" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>16. What is horizontal formatting in a report?</h2>
-                <label><input type="radio" name="q16" value="a"> A. Adjusting row heights</label><br>
-                <label><input type="radio" name="q16" value="b"> B. Setting column widths and alignments</label><br>
-                <label><input type="radio" name="q16" value="c"> C. Changing page orientation to landscape</label><br>
-                <label><input type="radio" name="q16" value="d"> D. Adding horizontal page breaks</label><br>
-                <button onclick="checkAnswer('q16', 'b', 'result16')">Check Answer</button>
-                <div id="result16" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>17. How can you apply consistent horizontal formatting across multiple columns?</h2>
-                <label><input type="radio" name="q17" value="a"> A. By using the Query Explorer</label><br>
-                <label><input type="radio" name="q17" value="b"> B. By setting column styles</label><br>
-                <label><input type="radio" name="q17" value="c"> C. By using the Group feature</label><br>
-                <label><input type="radio" name="q17" value="d"> D. By applying conditional formatting</label><br>
-                <button onclick="checkAnswer('q17', 'b', 'result17')">Check Answer</button>
-                <div id="result17" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>18. Which property controls the text alignment within a column?</h2>
-                <label><input type="radio" name="q18" value="a"> A. Font Style</label><br>
-                <label><input type="radio" name="q18" value="b"> B. Text Alignment</label><br>
-                <label><input type="radio" name="q18" value="c"> C. Column Width</label><br>
-                <label><input type="radio" name="q18" value="d"> D. Border Style</label><br>
-                <button onclick="checkAnswer('q18', 'b', 'result18')">Check Answer</button>
-                <div id="result18" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>19. Where can you specify print options for a PDF report in Cognos Analytics?</h2>
-                <label><input type="radio" name="q19" value="a"> A. Report Page Properties</label><br>
-                <label><input type="radio" name="q19" value="b"> B. PDF Options in the Properties Pane</label><br>
-                <label><input type="radio" name="q19" value="c"> C. Query Explorer</label><br>
-                <label><input type="radio" name="q19" value="d"> D. Page Explorer</label><br>
-                <button onclick="checkAnswer('q19', 'b', 'result19')">Check Answer</button>
-                <div id="result19" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>20. Which option allows you to control the size of the output PDF?</h2>
-                <label><input type="radio" name="q20" value="a"> A. Page Layout</label><br>
-                <label><input type="radio" name="q20" value="b"> B. Page Size</label><br>
-                <label><input type="radio" name="q20" value="c"> C. PDF Compression</label><br>
-                <label><input type="radio" name="q20" value="d"> D. Print Resolution</label><br>
-                <button onclick="checkAnswer('q20', 'b', 'result20')">Check Answer</button>
-                <div id="result20" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>21. How can you ensure a report is optimized for printing?</h2>
-                <label><input type="radio" name="q21" value="a"> A. By using landscape orientation</label><br>
-                <label><input type="radio" name="q21" value="b"> B. By previewing the report in PDF format</label><br>
-                <label><input type="radio" name="q21" value="c"> C. By reducing data size</label><br>
-                <label><input type="radio" name="q21" value="d"> D. By using conditional formatting</label><br>
-                <button onclick="checkAnswer('q21', 'b', 'result21')">Check Answer</button>
-                <div id="result21" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>22. What is the primary function of IBM Cognos Analytics?</h2>
-                <label><input type="radio" name="q22" value="a"> A. Data storage</label><br>
-                <label><input type="radio" name="q22" value="b"> B. Data visualization and reporting</label><br>
-                <label><input type="radio" name="q22" value="c"> C. Network security</label><br>
-                <label><input type="radio" name="q22" value="d"> D. System integration</label><br>
-                <button onclick="checkAnswer('q22', 'b', 'result22')">Check Answer</button>
-                <div id="result22" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>23. How does IBM Cognos Analytics integrate within an enterprise analytics solution?</h2>
-                <label><input type="radio" name="q23" value="a"> A. As a standalone data warehouse</label><br>
-                <label><input type="radio" name="q23" value="b"> B. As a reporting and data visualization layer</label><br>
-                <label><input type="radio" name="q23" value="c"> C. As a database management system</label><br>
-                <label><input type="radio" name="q23" value="d"> D. As an ETL tool</label><br>
-                <button onclick="checkAnswer('q23', 'b', 'result23')">Check Answer</button>
-                <div id="result23" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>24. Which feature of IBM Cognos Analytics supports decision-making processes?</h2>
-                <label><input type="radio" name="q24" value="a"> A. Data encryption</label><br>
-                <label><input type="radio" name="q24" value="b"> B. Interactive dashboards</label><br>
-                <label><input type="radio" name="q24" value="c"> C. System monitoring</label><br>
-                <label><input type="radio" name="q24" value="d"> D. Network analysis</label><br>
-                <button onclick="checkAnswer('q24', 'b', 'result24')">Check Answer</button>
-                <div id="result24" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>25. Which component of IBM Cognos Analytics is used to create and edit reports?</h2>
-                <label><input type="radio" name="q25" value="a"> A. Data Module</label><br>
-                <label><input type="radio" name="q25" value="b"> B. Report Studio</label><br>
-                <label><input type="radio" name="q25" value="c"> C. Query Studio</label><br>
-                <label><input type="radio" name="q25" value="d"> D. Framework Manager</label><br>
-                <button onclick="checkAnswer('q25', 'b', 'result25')">Check Answer</button>
-                <div id="result25" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>26. What is the role of IBM Cognos Framework Manager?</h2>
-                <label><input type="radio" name="q26" value="a"> A. To create dashboards</label><br>
-                <label><input type="radio" name="q26" value="b"> B. To define metadata models</label><br>
-                <label><input type="radio" name="q26" value="c"> C. To generate SQL queries</label><br>
-                <label><input type="radio" name="q26" value="d"> D. To manage user security</label><br>
-                <button onclick="checkAnswer('q26', 'b', 'result26')">Check Answer</button>
-                <div id="result26" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>27. Which component provides a drag-and-drop interface for creating data modules?</h2>
-                <label><input type="radio" name="q27" value="a"> A. Data Server</label><br>
-                <label><input type="radio" name="q27" value="b"> B. Report Viewer</label><br>
-                <label><input type="radio" name="q27" value="c"> C. Data Module Designer</label><br>
-                <label><input type="radio" name="q27" value="d"> D. Query Explorer</label><br>
-                <button onclick="checkAnswer('q27', 'c', 'result27')">Check Answer</button>
-                <div id="result27" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>28. What is a primary security feature in IBM Cognos Analytics?</h2>
-                <label><input type="radio" name="q28" value="a"> A. Data encryption</label><br>
-                <label><input type="radio" name="q28" value="b"> B. Role-based access control</label><br>
-                <label><input type="radio" name="q28" value="c"> C. Report caching</label><br>
-                <label><input type="radio" name="q28" value="d"> D. Data compression</label><br>
-                <button onclick="checkAnswer('q28', 'b', 'result28')">Check Answer</button>
-                <div id="result28" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>29. How does role-based access control enhance security in Cognos Analytics?</h2>
-                <label><input type="radio" name="q29" value="a"> A. By encrypting user data</label><br>
-                <label><input type="radio" name="q29" value="b"> B. By defining user permissions based on roles</label><br>
-                <label><input type="radio" name="q29" value="c"> C. By compressing data</label><br>
-                <label><input type="radio" name="q29" value="d"> D. By improving query performance</label><br>
-                <button onclick="checkAnswer('q29', 'b', 'result29')">Check Answer</button>
-                <div id="result29" class="result"></div>
-            </div>
-            <div class="question">
-                <h2>30. Which component manages authentication in IBM Cognos Analytics?</h2>
-                <label><input type="radio" name="q30" value="a"> A. Report Studio</label><br>
-                <label><input type="radio" name="q30" value="b"> B. Cognos Access Manager</label><br>
-                <label><input type="radio" name="q30" value="c"> C. Framework Manager</label><br>
-                <label><input type="radio" name="q30" value="d"> D. Data Module Designer</label><br>
-                <button onclick="checkAnswer('q30', 'b', 'result30')">Check Answer</button>
-                <div id="result30" class="result"></div>
-            </div>
+        <h1>MCQ Quiz - CAB202</h1>
+        <div class="unit-selection">
+            <button onclick="showUnit('LPU LIVE Questions')">LPU LIVE Questions</button>
+            <button onclick="showUnit('unit6')">Unit 6</button>
         </div>
+
+        <div id="LPU LIVE Questions" class="unit" style="display:none;">
+            <center><h2>LPU LIVE Questions</h2></center>
+            <div class="question">
+                <h2>Question: What is the primary goal of the Finance function in an organization?</h2>
+                <label><input type="radio" name="q1" value="A">A. Employee satisfaction</label>
+                <label><input type="radio" name="q1" value="B">B. Profit maximization</label>
+                <label><input type="radio" name="q1" value="C">C. Operational efficiency</label>
+                <label><input type="radio" name="q1" value="D">D. Marketing strategy</label>
+                <button onclick="checkAnswer('q1', 'B', 'r1')">Submit</button>
+                <div id="r1" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: Which financial statement provides a snapshot of an organization's financial position at a specific point in time?</h2>
+                <label><input type="radio" name="q2" value="A">A. Income statement</label>
+                <label><input type="radio" name="q2" value="B">B. Statement of cash flows</label>
+                <label><input type="radio" name="q2" value="C">C. Balance sheet</label>
+                <label><input type="radio" name="q2" value="D">D. Retained earnings statement</label>
+                <button onclick="checkAnswer('q2', 'C', 'r2')">Submit</button>
+                <div id="r2" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the purpose of financial budgeting in the Finance function?</h2>
+                <label><input type="radio" name="q3" value="A">A. Track employee performance</label>
+                <label><input type="radio" name="q3" value="B">B. Control marketing expenses</label>
+                <label><input type="radio" name="q3" value="C">C. Plan and allocate financial resources</label>
+                <label><input type="radio" name="q3" value="D">D. Monitor customer satisfaction</label>
+                <button onclick="checkAnswer('q3', 'C', 'r3')">Submit</button>
+                <div id="r3" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What does the term "ROI" stand for in finance?</h2>
+                <label><input type="radio" name="q4" value="A">A. Return on Investment</label>
+                <label><input type="radio" name="q4" value="B">B. Revenue Over Income</label>
+                <label><input type="radio" name="q4" value="C">C. Risk of Inflation</label>
+                <label><input type="radio" name="q4" value="D">D. Rate of Interest</label>
+                <button onclick="checkAnswer('q4', 'A', 'r4')">Submit</button>
+                <div id="r4" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What role does the Chief Financial Officer (CFO) typically play in an organization?</h2>
+                <label><input type="radio" name="q5" value="A">A. Human Resources management</label>
+                <label><input type="radio" name="q5" value="B">B. Strategic financial planning</label>
+                <label><input type="radio" name="q5" value="C">C. Product development</label>
+                <label><input type="radio" name="q5" value="D">D. Customer relationship management</label>
+                <button onclick="checkAnswer('q5', 'B', 'r5')">Submit</button>
+                <div id="r5" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the purpose of the audit function in finance?</h2>
+                <label><input type="radio" name="q6" value="A">A. Monitor employee performance</label>
+                <label><input type="radio" name="q6" value="B">B. Ensure compliance with financial regulations</label>
+                <label><input type="radio" name="q6" value="C">C. Develop marketing strategies</label>
+                <label><input type="radio" name="q6" value="D">D. Track customer satisfaction</label>
+                <button onclick="checkAnswer('q6', 'B', 'r6')">Submit</button>
+                <div id="r6" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In financial management, what does the term "liquidity" refer to?</h2>
+                <label><input type="radio" name="q7" value="A">A. Ability to convert assets into cash</label>
+                <label><input type="radio" name="q7" value="B">B. Profit margin</label>
+                <label><input type="radio" name="q7" value="C">C. Debt-to-equity ratio</label>
+                <label><input type="radio" name="q7" value="D">D. Return on investment</label>
+                <button onclick="checkAnswer('q7', 'A', 'r7')">Submit</button>
+                <div id="r7" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the primary goal of Enterprise Performance Management (EPM)?</h2>
+                <label><input type="radio" name="q8" value="A">A. Cost reduction</label>
+                <label><input type="radio" name="q8" value="B">B. Profit maximization</label>
+                <label><input type="radio" name="q8" value="C">C. Operational efficiency</label>
+                <label><input type="radio" name="q8" value="D">D. Strategic performance improvement</label>
+                <button onclick="checkAnswer('q8', 'D', 'r8')">Submit</button>
+                <div id="r8" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: Which of the following is a key component of EPM?</h2>
+                <label><input type="radio" name="q9" value="A">A. Customer Relationship Management (CRM)</label>
+                <label><input type="radio" name="q9" value="B">B. Enterprise Resource Planning (ERP)</label>
+                <label><input type="radio" name="q9" value="C">C. Business Intelligence (BI)</label>
+                <label><input type="radio" name="q9" value="D">D. Supply Chain Management (SCM)</label>
+                <button onclick="checkAnswer('q9', 'C', 'r9')">Submit</button>
+                <div id="r9" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What role does Key Performance Indicators (KPIs) play in EPM?</h2>
+                <label><input type="radio" name="q10" value="A">A. Measure financial performance only</label>
+                <label><input type="radio" name="q10" value="B">B. Monitor and evaluate overall organizational performance</label>
+                <label><input type="radio" name="q10" value="C">C. Track employee satisfaction</label>
+                <label><input type="radio" name="q10" value="D">D. Control operational costs</label>
+                <button onclick="checkAnswer('q10', 'B', 'r10')">Submit</button>
+                <div id="r10" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: Which phase of the EPM process involves setting organizational goals and objectives?</h2>
+                <label><input type="radio" name="q11" value="A">A. Planning</label>
+                <label><input type="radio" name="q11" value="B">B. Monitoring</label>
+                <label><input type="radio" name="q11" value="C">C. Reporting</label>
+                <label><input type="radio" name="q11" value="D">D. Analysis</label>
+                <button onclick="checkAnswer('q11', 'A', 'r11')">Submit</button>
+                <div id="r11" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the purpose of the "Consolidation" phase in EPM?</h2>
+                <label><input type="radio" name="q12" value="A">A. Generate financial reports</label>
+                <label><input type="radio" name="q12" value="B">B. Combine financial data from various sources</label>
+                <label><input type="radio" name="q12" value="C">C. Monitor daily operations</label>
+                <label><input type="radio" name="q12" value="D">D. Identify market trends</label>
+                <button onclick="checkAnswer('q12', 'B', 'r12')">Submit</button>
+                <div id="r12" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In EPM, what does the acronym "CPM" stand for?</h2>
+                <label><input type="radio" name="q13" value="A">A. Customer Profitability Management</label>
+                <label><input type="radio" name="q13" value="B">B. Corporate Performance Management</label>
+                <label><input type="radio" name="q13" value="C">C. Cost Per Mile</label>
+                <label><input type="radio" name="q13" value="D">D. Continuous Process Monitoring</label>
+                <button onclick="checkAnswer('q13', 'B', 'r13')">Submit</button>
+                <div id="r13" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: Which EPM function involves analyzing historical performance data to identify trends and patterns?</h2>
+                <label><input type="radio" name="q14" value="A">A. Planning</label>
+                <label><input type="radio" name="q14" value="B">B. Forecasting</label>
+                <label><input type="radio" name="q14" value="C">C. Analysis</label>
+                <label><input type="radio" name="q14" value="D">D. Monitoring</label>
+                <button onclick="checkAnswer('q14', 'C', 'r14')">Submit</button>
+                <div id="r14" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What does TM1 stand for in the context of IBM Planning Analytics?</h2>
+                <label><input type="radio" name="q15" value="A">A. Time Management 1</label>
+                <label><input type="radio" name="q15" value="B">B. TurboManager 1</label>
+                <label><input type="radio" name="q15" value="C">C. Technical Management 1</label>
+                <label><input type="radio" name="q15" value="D">D. IBM Cognos TM1</label>
+                <button onclick="checkAnswer('q15', 'D', 'r15')">Submit</button>
+                <div id="r15" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What type of database does TM1 use for storing multidimensional data?</h2>
+                <label><input type="radio" name="q16" value="A">A. Relational database</label>
+                <label><input type="radio" name="q16" value="B">B. NoSQL database</label>
+                <label><input type="radio" name="q16" value="C">C. Multidimensional database</label>
+                <label><input type="radio" name="q16" value="D">D. Graph database</label>
+                <button onclick="checkAnswer('q16', 'C', 'r16')">Submit</button>
+                <div id="r16" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is a cube?</h2>
+                <label><input type="radio" name="q17" value="A">A. A type of server</label>
+                <label><input type="radio" name="q17" value="B">B. A container for dimensions and data</label>
+                <label><input type="radio" name="q17" value="C">C. A visualization tool</label>
+                <label><input type="radio" name="q17" value="D">D. A security feature</label>
+                <button onclick="checkAnswer('q17', 'B', 'r17')">Submit</button>
+                <div id="r17" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the primary purpose of TurboIntegrator in TM1?</h2>
+                <label><input type="radio" name="q18" value="A">A. User authentication</label>
+                <label><input type="radio" name="q18" value="B">B. Data visualization</label>
+                <label><input type="radio" name="q18" value="C">C. Data integration and automation</label>
+                <label><input type="radio" name="q18" value="D">D. Cube design</label>
+                <button onclick="checkAnswer('q18', 'C', 'r18')">Submit</button>
+                <div id="r18" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the significance of a TM1 dimension?</h2>
+                <label><input type="radio" name="q19" value="A">A. It represents a measure in a cube</label>
+                <label><input type="radio" name="q19" value="B">B. It defines the structure of a cube</label>
+                <label><input type="radio" name="q19" value="C">C. It is used for data visualization</label>
+                <label><input type="radio" name="q19" value="D">D. It is a security feature</label>
+                <button onclick="checkAnswer('q19', 'B', 'r19')">Submit</button>
+                <div id="r19" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What role does the TM1 Contributor application play in the TM1 environment?</h2>
+                <label><input type="radio" name="q20" value="A">A. Data analysis and reporting</label>
+                <label><input type="radio" name="q20" value="B">B. Cube creation and design</label>
+                <label><input type="radio" name="q20" value="C">C. User authentication</label>
+                <label><input type="radio" name="q20" value="D">D. Data input and planning</label>
+                <button onclick="checkAnswer('q20', 'D', 'r20')">Submit</button>
+                <div id="r20" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is a rule and what does it define?</h2>
+                <label><input type="radio" name="q21" value="A">A. It's a security setting; defines user access</label>
+                <label><input type="radio" name="q21" value="B">B. It's a calculation; defines how data is derived in a cube</label>
+                <label><input type="radio" name="q21" value="C">C. It's a data visualization setting; defines chart appearance</label>
+                <label><input type="radio" name="q21" value="D">D. It's a backup setting; defines data recovery procedures</label>
+                <button onclick="checkAnswer('q21', 'B', 'r21')">Submit</button>
+                <div id="r21" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is TM1 (IBM Planning Analytics) primarily used for?</h2>
+                <label><input type="radio" name="q22" value="A">A. Customer Relationship Management</label>
+                <label><input type="radio" name="q22" value="B">B. Enterprise Resource Planning</label>
+                <label><input type="radio" name="q22" value="C">C. Financial Planning and Analysis</label>
+                <label><input type="radio" name="q22" value="D">D. Human Resource Management</label>
+                <button onclick="checkAnswer('q22', 'C', 'r22')">Submit</button>
+                <div id="r22" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is the purpose of a dimension?</h2>
+                <label><input type="radio" name="q23" value="A">A. Store data values</label>
+                <label><input type="radio" name="q23" value="B">B. Define hierarchy and structure for data</label>
+                <label><input type="radio" name="q23" value="C">C. Perform calculations</label>
+                <label><input type="radio" name="q23" value="D">D. Manage user access</label>
+                <button onclick="checkAnswer('q23', 'B', 'r23')">Submit</button>
+                <div id="r23" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: Which type of dimension in TM1 typically represents time periods, such as months or years?</h2>
+                <label><input type="radio" name="q24" value="A">A. Measure Dimension</label>
+                <label><input type="radio" name="q24" value="B">B. Attribute Dimension</label>
+                <label><input type="radio" name="q24" value="C">C. Time Dimension</label>
+                <label><input type="radio" name="q24" value="D">D. Cube Dimension</label>
+                <button onclick="checkAnswer('q24', 'C', 'r24')">Submit</button>
+                <div id="r24" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is a cube?</h2>
+                <label><input type="radio" name="q25" value="A">A. A three-dimensional spreadsheet</label>
+                <label><input type="radio" name="q25" value="B">B. A container for storing dimensions</label>
+                <label><input type="radio" name="q25" value="C">C. A visual representation of data</label>
+                <label><input type="radio" name="q25" value="D">D. A data validation tool</label>
+                <button onclick="checkAnswer('q25', 'A', 'r25')">Submit</button>
+                <div id="r25" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is a 'measure' in the context of TM1 cubes?</h2>
+                <label><input type="radio" name="q26" value="A">A. A calculated value</label>
+                <label><input type="radio" name="q26" value="B">B. A unit of dimension</label>
+                <label><input type="radio" name="q26" value="C">C. A data input field</label>
+                <label><input type="radio" name="q26" value="D">D. A security setting</label>
+                <button onclick="checkAnswer('q26', 'A', 'r26')">Submit</button>
+                <div id="r26" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what does the term 'consolidation' refer to?</h2>
+                <label><input type="radio" name="q27" value="A">A. Combining two cubes into one</label>
+                <label><input type="radio" name="q27" value="B">B. Summing up data at different hierarchy levels</label>
+                <label><input type="radio" name="q27" value="C">C. Creating a new dimension</label>
+                <label><input type="radio" name="q27" value="D">D. Deleting a dimension</label>
+                <button onclick="checkAnswer('q27', 'B', 'r27')">Submit</button>
+                <div id="r27" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: Which TM1 dimension type is used to classify elements of other dimensions, providing additional information about them?</h2>
+                <label><input type="radio" name="q28" value="A">A. Time Dimension</label>
+                <label><input type="radio" name="q28" value="B">B. Measure Dimension</label>
+                <label><input type="radio" name="q28" value="C">C. Attribute Dimension</label>
+                <label><input type="radio" name="q28" value="D">D. Cube Dimension</label>
+                <button onclick="checkAnswer('q28', 'C', 'r28')">Submit</button>
+                <div id="r28" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is a 'slice' in TM1 terminology?</h2>
+                <label><input type="radio" name="q29" value="A">A. A portion of a cube</label>
+                <label><input type="radio" name="q29" value="B">B. A data input field</label>
+                <label><input type="radio" name="q29" value="C">C. A dimension hierarchy</label>
+                <label><input type="radio" name="q29" value="D">D. A calculated measure</label>
+                <button onclick="checkAnswer('q29', 'A', 'r29')">Submit</button>
+                <div id="r29" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is the purpose of a 'rule' associated with a cube?</h2>
+                <label><input type="radio" name="q30" value="A">A. Define security settings</label>
+                <label><input type="radio" name="q30" value="B">B. Automate data imports</label>
+                <label><input type="radio" name="q30" value="C">C. Control user access</label>
+                <label><input type="radio" name="q30" value="D">D. Define calculations and data relationships</label>
+                <button onclick="checkAnswer('q30', 'D', 'r30')">Submit</button>
+                <div id="r30" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is an element in the context of a TM1 dimension?</h2>
+                <label><input type="radio" name="q31" value="A">A. A member of a dimension hierarchy</label>
+                <label><input type="radio" name="q31" value="B">B. A calculated measure</label>
+                <label><input type="radio" name="q31" value="C">C. A data input field</label>
+                <label><input type="radio" name="q31" value="D">D. A dimension attribute</label>
+                <button onclick="checkAnswer('q31', 'A', 'r31')">Submit</button>
+                <div id="r31" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is a 'view'?</h2>
+                <label><input type="radio" name="q32" value="A">A. A snapshot of data from a cube</label>
+                <label><input type="radio" name="q32" value="B">B. A data visualization tool</label>
+                <label><input type="radio" name="q32" value="C">C. A user access setting</label>
+                <label><input type="radio" name="q32" value="D">D. A dimension attribute</label>
+                <button onclick="checkAnswer('q32', 'A', 'r32')">Submit</button>
+                <div id="r32" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is the purpose of 'drilling' in TM1?</h2>
+                <label><input type="radio" name="q33" value="A">A. Creating new cubes</label>
+                <label><input type="radio" name="q33" value="B">B. Viewing detailed data behind summary data</label>
+                <label><input type="radio" name="q33" value="C">C. Securing data</label>
+                <label><input type="radio" name="q33" value="D">D. Designing dimensions</label>
+                <button onclick="checkAnswer('q33', 'B', 'r33')">Submit</button>
+                <div id="r33" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is a 'sandbox'?</h2>
+                <label><input type="radio" name="q34" value="A">A. A security feature for data protection</label>
+                <label><input type="radio" name="q34" value="B">B. A test environment for scenario analysis</label>
+                <label><input type="radio" name="q34" value="C">C. A tool for data visualization</label>
+                <label><input type="radio" name="q34" value="D">D. A type of data cube</label>
+                <button onclick="checkAnswer('q34', 'B', 'r34')">Submit</button>
+                <div id="r34" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What does the 'Recalculate' function do in TM1?</h2>
+                <label><input type="radio" name="q35" value="A">A. Updates dimensions</label>
+                <label><input type="radio" name="q35" value="B">B. Recomputes the values of calculated elements</label>
+                <label><input type="radio" name="q35" value="C">C. Refreshes data sources</label>
+                <label><input type="radio" name="q35" value="D">D. Validates data input</label>
+                <button onclick="checkAnswer('q35', 'B', 'r35')">Submit</button>
+                <div id="r35" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: What is a 'dimension' in TM1?</h2>
+                <label><input type="radio" name="q36" value="A">A. A measure of data accuracy</label>
+                <label><input type="radio" name="q36" value="B">B. A hierarchical organization of data elements</label>
+                <label><input type="radio" name="q36" value="C">C. A type of data cube</label>
+                <label><input type="radio" name="q36" value="D">D. A user access setting</label>
+                <button onclick="checkAnswer('q36', 'B', 'r36')">Submit</button>
+                <div id="r36" class="result"></div>
+            </div>
+
+            <div class="question">
+                <h2>Question: In TM1, what is the role of 'chore'?</h2>
+                <label><input type="radio" name="q37" value="A">A. Manage user access</label>
+                <label><input type="radio" name="q37" value="B">B. Automate repetitive tasks</label>
+                <label><input type="radio" name="q37" value="C">C. Create data cubes</label>
+                <label><input type="radio" name="q37" value="D">D. Design dimensions</label>
+                <button onclick="checkAnswer('q37', 'B', 'r37')">Submit</button>
+                <div id="r37" class="result"></div>
+            </div>
+            <hr>
+            
+
+        </div>
+
+        <div id="unit6" class="unit" style="display:none;">
+            <center><h2>UNIT 6 (Extra Questions)</h2></center>
+            <hr>
+            <div class="question">
+                <h2>Question: What is one of the primary challenges in currency conversion?</h2>
+                <label><input type="radio" name="u5q1" value="A">A. Exchange rate volatility</label>
+                <label><input type="radio" name="u5q1" value="B">B. Standardized exchange rates</label>
+                <label><input type="radio" name="u5q1" value="C">C. Fixed exchange rates</label>
+                <label><input type="radio" name="u5q1" value="D">D. Currency stability</label>
+                <button onclick="checkAnswer('u5q1', 'A', 'ur1')">Submit</button>
+                <div id="ur1" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Why is it important to regularly update exchange rates in a financial system?</h2>
+                <label><input type="radio" name="u5q2" value="A">A. To increase the complexity of calculations</label>
+                <label><input type="radio" name="u5q2" value="B">B. To ensure accuracy in financial reporting</label>
+                <label><input type="radio" name="u5q2" value="C">C. To simplify data entry</label>
+                <label><input type="radio" name="u5q2" value="D">D. To comply with data protection laws</label>
+                <button onclick="checkAnswer('u5q2', 'B', 'ur2')">Submit</button>
+                <div id="ur2" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Which of the following is NOT a method to mitigate currency risk?</h2>
+                <label><input type="radio" name="u5q3" value="A">A. Hedging</label>
+                <label><input type="radio" name="u5q3" value="B">B. Diversification</label>
+                <label><input type="radio" name="u5q3" value="C">C. Currency speculation</label>
+                <label><input type="radio" name="u5q3" value="D">D. Use of forward contracts</label>
+                <button onclick="checkAnswer('u5q3', 'C', 'ur3')">Submit</button>
+                <div id="ur3" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is the primary purpose of a control cube in TM1?</h2>
+                <label><input type="radio" name="u5q4" value="A">A. To store user preferences</label>
+                <label><input type="radio" name="u5q4" value="B">B. To manage and control the structure of other cubes</label>
+                <label><input type="radio" name="u5q4" value="C">C. To store raw financial data</label>
+                <label><input type="radio" name="u5q4" value="D">D. To generate reports</label>
+                <button onclick="checkAnswer('u5q4', 'B', 'ur4')">Submit</button>
+                <div id="ur4" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Which control cube in TM1 holds information about security assignments?</h2>
+                <label><input type="radio" name="u5q5" value="A">A. }ElementAttributes_}Clients</label>
+                <label><input type="radio" name="u5q5" value="B">B. }DimensionSecurity</label>
+                <label><input type="radio" name="u5q5" value="C">C. }CubeSecurity</label>
+                <label><input type="radio" name="u5q5" value="D">D. }ProcessSecurity</label>
+                <button onclick="checkAnswer('u5q5', 'B', 'ur5')">Submit</button>
+                <div id="ur5" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: In TM1, which control cube can be used to track data changes and audit trails?</h2>
+                <label><input type="radio" name="u5q6" value="A">A. }ClientProperties</label>
+                <label><input type="radio" name="u5q6" value="B">B. }ElementAttributes_}Cubes</label>
+                <label><input type="radio" name="u5q6" value="C">C. }TransactionLog</label>
+                <label><input type="radio" name="u5q6" value="D">D. }ProcessSecurity</label>
+                <button onclick="checkAnswer('u5q6', 'C', 'ur6')">Submit</button>
+                <div id="ur6" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Which TM1 function is commonly used in rules to apply currency conversion rates?</h2>
+                <label><input type="radio" name="u5q7" value="A">A. DB()</label>
+                <label><input type="radio" name="u5q7" value="B">B. NVALUES()</label>
+                <label><input type="radio" name="u5q7" value="C">C. STET()</label>
+                <label><input type="radio" name="u5q7" value="D">D. CUBEVALUE()</label>
+                <button onclick="checkAnswer('u5q7', 'A', 'ur7')">Submit</button>
+                <div id="ur7" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What should be considered when creating rules for currency conversion in TM1?</h2>
+                <label><input type="radio" name="u5q8" value="A">A. Data type consistency</label>
+                <label><input type="radio" name="u5q8" value="B">B. Exchange rate source</label>
+                <label><input type="radio" name="u5q8" value="C">C. Cube dimensions</label>
+                <label><input type="radio" name="u5q8" value="D">D. All of the above</label>
+                <button onclick="checkAnswer('u5q8', 'D', 'ur8')">Submit</button>
+                <div id="ur8" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: In TM1, which function would you use to prevent a rule from being applied?</h2>
+                <label><input type="radio" name="u5q9" value="A">A. IF()</label>
+                <label><input type="radio" name="u5q9" value="B">B. SKIPCHECK()</label>
+                <label><input type="radio" name="u5q9" value="C">C. STET()</label>
+                <label><input type="radio" name="u5q9" value="D">D. CONTINUE()</label>
+                <button onclick="checkAnswer('u5q9', 'C', 'ur9')">Submit</button>
+                <div id="ur9" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is a recommended practice to reduce maintenance in TM1?</h2>
+                <label><input type="radio" name="u5q10" value="A">A. Hard-coding all values</label>
+                <label><input type="radio" name="u5q10" value="B">B. Using dynamic subsets</label>
+                <label><input type="radio" name="u5q10" value="C">C. Creating complex, unstructured rules</label>
+                <label><input type="radio" name="u5q10" value="D">D. Avoiding use of control cubes</label>
+                <button onclick="checkAnswer('u5q10', 'B', 'ur10')">Submit</button>
+                <div id="ur10" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: How can feeder statements help in TM1?</h2>
+                <label><input type="radio" name="u5q11" value="A">A. They increase the size of the model</label>
+                <label><input type="radio" name="u5q11" value="B">B. They ensure that calculated cells are correctly updated</label>
+                <label><input type="radio" name="u5q11" value="C">C. They simplify the model structure</label>
+                <label><input type="radio" name="u5q11" value="D">D. They replace the need for rules</label>
+                <button onclick="checkAnswer('u5q11', 'B', 'ur11')">Submit</button>
+                <div id="ur11" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is one way to minimize manual updates in TM1 models?</h2>
+                <label><input type="radio" name="u5q12" value="A">A. Regularly changing rule structures</label>
+                <label><input type="radio" name="u5q12" value="B">B. Utilizing attribute-driven rules</label>
+                <label><input type="radio" name="u5q12" value="C">C. Using static subsets</label>
+                <label><input type="radio" name="u5q12" value="D">D. Manually adjusting data points</label>
+                <button onclick="checkAnswer('u5q12', 'B', 'ur12')">Submit</button>
+                <div id="ur12" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is the primary role of Cognos TM1 Architect?</h2>
+                <label><input type="radio" name="u5q13" value="A">A. To design and build TM1 models</label>
+                <label><input type="radio" name="u5q13" value="B">B. To perform data entry</label>
+                <label><input type="radio" name="u5q13" value="C">C. To generate reports</label>
+                <label><input type="radio" name="u5q13" value="D">D. To conduct data analysis</label>
+                <button onclick="checkAnswer('u5q13', 'A', 'ur13')">Submit</button>
+                <div id="ur13" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Which component in TM1 Architect is used to define dimensions and cubes?</h2>
+                <label><input type="radio" name="u5q14" value="A">A. Control cube</label>
+                <label><input type="radio" name="u5q14" value="B">B. Process manager</label>
+                <label><input type="radio" name="u5q14" value="C">C. Dimension editor</label>
+                <label><input type="radio" name="u5q14" value="D">D. Subset editor</label>
+                <button onclick="checkAnswer('u5q14', 'C', 'ur14')">Submit</button>
+                <div id="ur14" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is a key benefit of using TM1 Architect for data modeling?</h2>
+                <label><input type="radio" name="u5q15" value="A">A. Simplified user interface for data entry</label>
+                <label><input type="radio" name="u5q15" value="B">B. Advanced data analysis capabilities</label>
+                <label><input type="radio" name="u5q15" value="C">C. Integration with multiple data sources</label>
+                <label><input type="radio" name="u5q15" value="D">D. Easy visualization of cube structures</label>
+                <button onclick="checkAnswer('u5q15', 'D', 'ur15')">Submit</button>
+                <div id="ur15" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What does the Cognos TM1 Architect record typically include?</h2>
+                <label><input type="radio" name="u5q16" value="A">A. User access logs</label>
+                <label><input type="radio" name="u5q16" value="B">B. Model definitions and structures</label>
+                <label><input type="radio" name="u5q16" value="C">C. Financial transactions</label>
+                <label><input type="radio" name="u5q16" value="D">D. Report formats</label>
+                <button onclick="checkAnswer('u5q16', 'B', 'ur16')">Submit</button>
+                <div id="ur16" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: How often should TM1 Architect records be reviewed for accuracy?</h2>
+                <label><input type="radio" name="u5q17" value="A">A. Annually</label>
+                <label><input type="radio" name="u5q17" value="B">B. Monthly</label>
+                <label><input type="radio" name="u5q17" value="C">C. Quarterly</label>
+                <label><input type="radio" name="u5q17" value="D">D. As needed, based on model changes</label>
+                <button onclick="checkAnswer('u5q17', 'D', 'ur17')">Submit</button>
+                <div id="ur17" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is the consequence of not regularly reviewing TM1 Architect records?</h2>
+                <label><input type="radio" name="u5q18" value="A">A. Increased system performance</label>
+                <label><input type="radio" name="u5q18" value="B">B. Potential for outdated or incorrect data structures</label>
+                <label><input type="radio" name="u5q18" value="C">C. Simplified maintenance processes</label>
+                <label><input type="radio" name="u5q18" value="D">D. Enhanced data security</label>
+                <button onclick="checkAnswer('u5q18', 'B', 'ur18')">Submit</button>
+                <div id="ur18" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What is the purpose of MDX (Multidimensional Expressions) in TM1?</h2>
+                <label><input type="radio" name="u5q19" value="A">A. To define data transformation rules</label>
+                <label><input type="radio" name="u5q19" value="B">B. To perform complex data retrievals</label>
+                <label><input type="radio" name="u5q19" value="C">C. To format reports</label>
+                <label><input type="radio" name="u5q19" value="D">D. To manage user security</label>
+                <button onclick="checkAnswer('u5q19', 'B', 'ur19')">Submit</button>
+                <div id="ur19" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Which of the following is a basic element of an MDX query?</h2>
+                <label><input type="radio" name="u5q20" value="A">A. Select clause</label>
+                <label><input type="radio" name="u5q20" value="B">B. Insert clause</label>
+                <label><input type="radio" name="u5q20" value="C">C. Update clause</label>
+                <label><input type="radio" name="u5q20" value="D">D. Delete clause</label>
+                <button onclick="checkAnswer('u5q20', 'A', 'ur20')">Submit</button>
+                <div id="ur20" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: What does an MDX 'WITH' statement do?</h2>
+                <label><input type="radio" name="u5q21" value="A">A. Defines a temporary calculation or set to be used in the query</label>
+                <label><input type="radio" name="u5q21" value="B">B. Updates data within the cube</label>
+                <label><input type="radio" name="u5q21" value="C">C. Deletes specified data points</label>
+                <label><input type="radio" name="u5q21" value="D">D. Inserts new data points</label>
+                <button onclick="checkAnswer('u5q21', 'A', 'ur21')">Submit</button>
+                <div id="ur21" class="result"></div>
+            </div>
+            <div class="question">
+                <h2>Question: Why is it important to understand MDX when working with TM1?</h2>
+                <label><input type="radio" name="u5q22" value="A">A. It is used to manage server performance</label>
+                <label><input type="radio" name="u5q22" value="B">B. It allows for advanced data manipulation and reporting</label>
+                <label><input type="radio" name="u5q22" value="C">C. It is required for data entry</label>
+                <label><input type="radio" name="u5q22" value="D">D. It is used for user authentication</label>
+                <button onclick="checkAnswer('u5q22', 'B', 'ur22')">Submit</button>
+                <div id="ur22" class="result"></div>
+            </div>
+                </div>
+
     </div>
-<script>
 
-function checkAnswer(question, correctAnswer, resultId) {
-  const form = document.getElementById('quiz');
-  const resultDiv = document.getElementById(resultId);
-  const userAnswer = form.querySelector(`input[name="${question}"]:checked`);
 
-  if (userAnswer) {
-      if (userAnswer.value === correctAnswer) {
-          resultDiv.textContent = 'Correct!';
-          resultDiv.classList.add('correct');
-          resultDiv.classList.remove('incorrect');
-      } else {
-          resultDiv.textContent = `Incorrect. The correct answer is ${correctAnswer.toUpperCase()}.`;
-          resultDiv.classList.add('incorrect');
-          resultDiv.classList.remove('correct');
-      }
-  } else {
-      resultDiv.textContent = 'Please select an answer.';
-      resultDiv.classList.remove('correct');
-      resultDiv.classList.remove('incorrect');
-  }
-}
-
-</script>
 </body>
 </html>
